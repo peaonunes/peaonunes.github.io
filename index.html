@@ -15,12 +15,14 @@
 		<nav class="red accent-3" role="navigation">
 			<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Rafael Nunes</a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
+					<li><a href="#" onclick="changeDiv(4)">Home</a></li>	
+					<li><a href="#" onclick="changeDiv(1)">Resume</a></li>					
 					<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
 					<li><a href="#" onclick="changeDiv(3)">Projects</a></li>
 				</ul>
 
 				<ul id="nav-mobile" class="side-nav">
+					<li><a href="#" onclick="changeDiv(4)">Home</a></li>	
 					<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
 					<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
 					<li><a href="#" onclick="changeDiv(3)">Projects</a></li>
@@ -51,7 +53,7 @@
 				<br><br>
 				<!--   Icon Section   -->
 				<div class="row">
-					<div class="col s12 m4" onclick="changeDiv(1)" title="Click to read my resume.">
+					<div class="col s12 m4" onclick="changeDiv(1);" title="Click to read my resume.">
 						<div class="icon-block">
 							<h2 class="center orange-text"><i class="material-icons">person_pin</i></h2>
 							<h5 class="center">Resume</h5>
@@ -75,10 +77,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
-			</div>
-				<br><br>
 			</div>
 		</div>
 
@@ -108,7 +106,6 @@
 		</footer>
 
 		<div class="container" style="display: none;" id="mainSite" >
-
 			<div id="top" class="row">
 				<br><br>
 			  
@@ -129,7 +126,7 @@
 				<br><br>
 				<!--   Icon Section   -->
 				<div class="row">
-					<div class="col s12 m4">
+					<div class="col s12 m4" onclick="changeDiv(1);" title="Click to read my resume.">
 						<div class="icon-block">
 							<h2 class="center orange-text"><i class="material-icons">person_pin</i></h2>
 							<h5 class="center">Resume</h5>
@@ -137,17 +134,15 @@
 						</div>
 					</div>
 
-					<div class="col s12 m4">
+					<div class="col s12 m4" onclick="changeDiv(2)" title="Click to read my posts.">
 						<div class="icon-block">
-							<a href="./blog.html">
 								<h2 class="center orange-text"><i class="material-icons">chat</i></h2>
 								<h5 class="center">Blog</h5>
 								<p class="light">My attempts to write about something.</p>
-							</a>
 						</div>
 					</div>
 
-					<div class="col s12 m4">
+					<div class="col s12 m4" onclick="changeDiv(3)" title="Click to see my projects.">
 						<div class="icon-block">
 							<h2 class="center orange-text"><i class="material-icons">new_releases</i></h2>
 							<h5 class="center">Projects</h5>
@@ -155,10 +150,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
-			</div>
-				<br><br>
 			</div>
 		</div>
 
@@ -178,8 +169,7 @@
 				<li>Stub 6...</li>
 				<li>Stub 7...</li>
 			</ul>
-			
-			<br><br>
+
 		</div>
 
 		<div class="container" style="display: none;" id="mainBlog">
@@ -189,12 +179,106 @@
 				<script async src="https://static.medium.com/embed.js"></script>
 				<a class="m-profile" data-width="100%" data-collapsed="false" href="https://medium.com/@peaonunes">Rafael Nunes</a>
 			</div>
-			<br><br>
 		</div>
 
 		<div class="container" style="display: none;" id="mainResume">
 
-			<p>Soon..</p>
+			<h3><a id="Education_0"></a>Education</h3>
+			<p><strong>University Of Liverpool, Liverpool, United Kingdom</strong>  Jan, 2014 - Jan, 2015</p>
+			<blockquote>
+				<ul>
+					<li>Electronic Commerce Computing BSc</li>
+					<li>Exchange Undergraduate Student by Science without Borders Program</p></li>
+				</ul>				
+			</blockquote>
+
+			<p><strong>Center of Informatics (CIn), Federal University of Pernambuco, Recife-PE, Brasil</strong>
+			Jan, 2011 - Expected Dec, 2016</p>
+
+			<blockquote>
+				<p>Bachelor Computer Science</p>
+			</blockquote>
+
+			<h3><a id="Skills_10"></a>Skills</h3>
+			<p><strong>Programming</strong></p>
+			<blockquote>
+				<ul>
+					<li><strong>Working experience</strong> in products using Java and C#</li>
+					<li><strong>Coursework experience</strong> with Python, RDF/OWL, NodeJS/Typescript, Swift</li>
+					<li><strong>Some experience</strong> with JavaScript, HTML/CSS</li>
+				</ul>
+			</blockquote>
+
+			<p><strong>Technical and Tools</strong></p>
+			<blockquote>
+				<p>Scrum, Continuous Delivery, Ranorex, KNIME, Visual Studio, XCode, Eclipse, GIT, TFS, PowerShell, Windows, OSX.</p>
+			</blockquote>
+
+			<p><strong>Languages</strong></p>
+			<blockquote>
+				<p>Native Portuguese, Advanced English</p>
+			</blockquote>
+			
+			<h3><a id="Professional_Experience_24"></a>Professional Experience</h3>
+			<p><strong>SUATI, Recife, Brazil - Software Development Engineer Intern</strong> Apr, 2015 - Jan, 2016</p>
+			<blockquote>
+				<ul>
+					<li>Woking with Microsoft technologies, developing in C# on internal tools and in the main products. Collaborating to GENE the main product about internal process management of energy market of Brazil, this platform runs in C# and supports Oracle and SQLServer.</li>
+					<li>Moved to work in a internal project related to Continuous Delivery and UI Automated Tests. Collaborating with my team in the creation of an infrastructure of Continuous Delivery and an infrastructure to write tests, run and build reports. Working with Ranorex platform, developing an internal IDE as an extension of Visual Studio to help testers write, maintain and run better tests cases and quickly.</li>
+				</ul>
+			</blockquote>
+
+			<p><strong>Stig Co, Recife, Brazil - CEO &amp; CO-Founder</strong> Jan, 2013 - Jan, 2014</p>
+			<blockquote>
+				<ul>
+					<li>Startup - Led project management and developing Client/Server iOS Application.</li>
+				</ul>
+			</blockquote>
+
+			<p><strong>PET-Informática, Federal University of Pernambuco, Recife, Brazil - Member</strong> Mar 2013 - Today</p>
+			<blockquote>
+				<ul>
+					<li>Developing projects (programming, social and environmental) for improving the graduation, department and the community life.</li>
+					<li>Organised the national meeting of PETs (ENAPET 2013) groups for 1500 attendees.</li>
+					<li>Proposed and organized first Olimpiada Pernambucana de Informatica (Pernambuco Olympiad in Informatics). Event contributed to familiarize primary and high school students to the computer science and math fields and prepared them to the national Olympiad. Official website: <a href="http://www.cin.ufpe.br/~pet/opei/">http://www.cin.ufpe.br/~pet/opei/</a></li>
+				</ul>
+			</blockquote>
+
+			<h3><a id="Teaching_Experience_43"></a>Teaching Experience</h3>
+			
+			<p><strong>Volunteering Teaching Assistant at CIn, Federal University of Pernambuco:</strong></p>
+			<blockquote>
+				<ul>
+					<li>Jan, 2013 - Jan, 2014: Theory of Computation</li>
+					<li>Jan, 2013 - Jan, 2014: Software Engineering and Systems</li>
+					<li>Jan, 2012 - Jan, 2013: Statistics and Probability for Computing</li>
+				</ul>
+			</blockquote>
+
+			<p><strong>Volunteering Teaching at PET-Informática, Federal University of Pernambuco:</strong></p>
+			<blockquote>
+				<ul>
+					<li>Oct, 2013, May and Oct 2015 - Teaching Windows, Word, Excel, Powerpoint, Internet for UFPE employees and people from neighboring communities.</li>
+					<li>Jan, 2016 - Introducing Computer Science and Python for High School students.</li>
+				</ul>
+			</blockquote>
+
+			<p><strong>Teaching Assistant at Boa Viagem High School:</strong></p>
+			<blockquote>
+				<ul>
+					<li>2011 - 2013: Mathematics and Chemistry</li>
+				</ul>
+			</blockquote>	
+
+			<h3><a id="Personal_Interests_60"></a>Personal Interests</h3>
+			<blockquote>
+				<ul>
+					<li>Sport Club of Recife supporter!</li>
+					<li>Fitness and Sports like Running, Football, Tennis…</li>
+					<li>Editing and producing videos.</li>
+					<li>In love with heavy metal, rock, punk, hiphop, rap, house, trance, yes I’m eclectic.</li>
+				</ul>
+			</blockquote>	
 		</div>
 
 		<!--  Scripts-->
@@ -203,5 +287,5 @@
 		<script src="js/init.js"></script>
 		<script src="http://lab.lepture.com/github-cards/widget.js"></script>
 		<script src="./js/onClickAction.js"></script>
-	  </body>
+	</body>
 </html>
