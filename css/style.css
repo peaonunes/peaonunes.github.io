@@ -16,3 +16,13 @@
 #mouseHover {
 	cursor: pointer;
 }
+
+.card-size {
+  width:335px;
+  height:350px;
+}
+
+.card-image-size {
+  width:335px;
+  height:150px;
+}
