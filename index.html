@@ -12,24 +12,26 @@
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
 	<body>
-		<nav class="red accent-3" role="navigation">
-			<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Rafael Nunes</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="#" onclick="changeDiv(4)">Home</a></li>
-					<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
-					<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
-					<li><a href="#" onclick="changeDiv(3)">Projects</a></li>
-				</ul>
+		<div class="navbar-fixed">
+			<nav class="red" role="navigation">
+				<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Rafael Nunes</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#" onclick="changeDiv(4)">Home</a></li>
+						<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
+						<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
+						<li><a href="#" onclick="changeDiv(3)">Projects</a></li>
+					</ul>
 
-				<ul id="nav-mobile" class="side-nav">
-					<li><a href="#" onclick="changeDiv(4)">Home</a></li>
-					<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
-					<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
-					<li><a href="#" onclick="changeDiv(3)">Projects</a></li>
-				</ul>
-				<a target="_blank" href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-			</div>
-		</nav>
+					<ul id="nav-mobile" class="side-nav">
+						<li><a href="#" onclick="changeDiv(4)">Home</a></li>
+						<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
+						<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
+						<li><a href="#" onclick="changeDiv(3)">Projects</a></li>
+					</ul>
+					<a target="_blank" href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				</div>
+			</nav>
+		</div>
 
 		<div class="container" id="main">
 
@@ -45,7 +47,7 @@
 				</div>
 
 				<div class="col s12 m12 center">
-					<h5 class="light">I clearly don't know how to build a fancy website.</h5>
+					<h5 class="light">I clearly don't know how to build a fancy website, but I won't give up.</h5>
 				</div>
 			</div>
 
@@ -204,6 +206,19 @@
 				</div>
 
 				<div class="col s12 m4 l4">
+					<div class="card card-size">
+						<div class="card-image">
+							<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject"><img src="imgs/neural.png" class="card-image-size"></a>
+						</div>
+						<div class="card-content">
+							<p class="card-title">Neural Network Project</p>
+							<p>Use of a Neural Network focusing on achieve its best performance applied to a breast cancer detection database. Project of <a targe="_blank" href="http://www.cin.ufpe.br/~gcv/web_lci/intro.html">IF702, Neural Networks</a>.</p>
+							<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">Github</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4 l4">
           <div class="card card-size">
 						<div class="card-image">
               <a target="_blank" href="https://github.com/Valbrand/aps-politique-node"><img src="imgs/politique.jpg" class="card-image-size"></a>
@@ -212,19 +227,6 @@
 							<p class="card-title">Politique?</p>
               Design and implementation of a Web Application (NodeJS) as main project of <a target="_black" href="http://www.cin.ufpe.br/~if718/">IF718, Software Analysis and Design</a>.
 							<br><a target="_blank" href="https://github.com/Valbrand/aps-politique-node">Github</a>
-            </div>
-          </div>
-        </div>
-
-				<div class="col s12 m4 l4">
-          <div class="card card-size">
-						<div class="card-image">
-              	<a target="_blank" href="https://github.com/peaonunes/impt"><img src="imgs/ipmt.png" class="card-image-size"></a>
-            </div>
-            <div class="card-content">
-							<p class="card-title"> IPMT</p>
-              <p>Implementation of an Index Pattern Matching Tool second project of <a targe="_blank" href="http://www.cin.ufpe.br/~paguso/courses/if767/2015-2/">IF767, PCC</a>.</p>
-							<a target="_blank" href="https://github.com/peaonunes/impt">Github</a>
             </div>
           </div>
         </div>
@@ -243,17 +245,17 @@
 				</div>
 
 				<div class="col s12 m4 l4">
-					<div class="card card-size">
+          <div class="card card-size">
 						<div class="card-image">
-							<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject"><img src="imgs/neural.png" class="card-image-size"></a>
-						</div>
-						<div class="card-content">
-							<p class="card-title">Neural Network Project</p>
-							<p>Use of a Neural Network focusing on achieve its best performance applied to a breast cancer detection database. Project of <a targe="_blank" href="http://www.cin.ufpe.br/~gcv/web_lci/intro.html">IF702, Neural Networks</a>.</p>
-							<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">Github</a>
-						</div>
-					</div>
-				</div>
+              	<a target="_blank" href="https://github.com/peaonunes/impt"><img src="imgs/ipmt.png" class="card-image-size"></a>
+            </div>
+            <div class="card-content">
+							<p class="card-title"> IPMT</p>
+              <p>Implementation of an Index Pattern Matching Tool second project of <a targe="_blank" href="http://www.cin.ufpe.br/~paguso/courses/if767/2015-2/">IF767, PCC</a>.</p>
+							<a target="_blank" href="https://github.com/peaonunes/impt">Github</a>
+            </div>
+          </div>
+        </div>
 
 			</div>
 
