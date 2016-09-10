@@ -8,3 +8,10 @@ function changeDiv(i){
 	else
 		document.getElementById("main").innerHTML = document.getElementById("mainSite").innerHTML;
 }
+
+function Redirecting(){
+	console.log('teste');
+	var link = document.getElementById("Golink").value;
+	console.log(link);
+	window.location=link;
+}
