@@ -9,9 +9,7 @@ function changeDiv(i){
 		document.getElementById("main").innerHTML = document.getElementById("mainSite").innerHTML;
 }
 
-function Redirecting(){
-	console.log('teste');
-	var link = document.getElementById("Golink").value;
-	console.log(link);
+function RedirecToLink(){
+	var link = document.getElementById("linkToGo").value;
 	window.location=link;
 }
