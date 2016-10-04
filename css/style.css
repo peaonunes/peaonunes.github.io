@@ -17,6 +17,10 @@
 	cursor: pointer;
 }
 
+#welcomeMessage {
+    color: red darken-4;
+}
+
 .card-size {
   width:335px;
   height:350px;
