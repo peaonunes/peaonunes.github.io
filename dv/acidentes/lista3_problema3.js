@@ -804,7 +804,7 @@ function init(){
         .attr("id","yAxis");
 
     svgHist = d3.select("#histGroup")
-                .append("svg")
+                .append("g")
                 .attr("id","hist")
                 .attr("width", w/2)
                 .attr("height", h/2)
@@ -839,7 +839,7 @@ function init(){
         .text("X: Meses vs Y: #acidentes");
 
     svgLine = d3.select("#chartGroup")
-                .append("svg")
+                .append("g")
                 .attr("width",w/2)
                 .attr("height",h/2)
                 .attr("id","lineChart")
