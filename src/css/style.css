@@ -1,0 +1,62 @@
+.max-height {
+    height: 100vh;
+}
+
+.font-body {
+    font-family: 'Montserrat', 'roboto';
+}
+
+.menu-padding {
+    padding-top: 50px !important;
+    padding-right: 20px !important;
+}
+
+.bio-style {
+    font-size: large;
+}
+
+.content-style {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    color: rgb(58, 58, 58);
+}
+
+.side-style {
+    background-color: rgb(58, 58, 58);
+}
+
+.image-perfil {
+    border: 5px solid white;
+}
+
+.icon-section-margin {
+    margin-top: 10px !important;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+.icon-align {
+    vertical-align: middle; padding-bottom: 3px
+}
+.menu-align {
+}
+
+div a i:hover{
+    color: #fff;
+}
+
+ul li a {
+    color: white;
+    font-size: x-large;
+}
+
+ul li a:hover {
+    color: #f44336;
+}
+
+#content {
+    max-height: 100vh !important;
+    overflow: scroll;
+}
