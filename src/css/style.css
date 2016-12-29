@@ -6,6 +6,10 @@
     font-family: 'Montserrat', 'roboto';
 }
 
+.icon-color {
+    color: #f44336;
+}
+
 .menu-padding {
     padding-top: 50px !important;
     padding-right: 20px !important;
@@ -59,4 +63,43 @@ ul li a:hover {
 #content {
     max-height: 100vh !important;
     overflow: scroll;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+#content a {
+    color: red;
+    font-size: medium !important;
+}
+
+#content a:hover {
+    color: rgb(58, 58, 58);
+}
+
+#content ul {
+    text-align: justify !important;
+}
+
+.table-list-float {
+    float: left !important;
+}
+
+.table-list-padding {
+    padding-left: 10px;
+}
+
+.table-item-padding {
+    padding-bottom: 0px !important;
+    padding-top: 5px !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+    word-wrap: break-word;
+}
+
+.on-left-padding {
+    padding-top: 10px !important;
+    padding-left: 20px !important;
 }
