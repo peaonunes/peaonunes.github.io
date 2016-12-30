@@ -1,0 +1,124 @@
+.max-height {
+    height: 100vh;
+}
+
+.icon-color {
+    color: #FF1C4C;
+}
+
+.menu-padding {
+    padding-top: 50px !important;
+    padding-right: 20px !important;
+}
+
+.bio-style {
+    font-size: large;
+}
+
+.content-style {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    color: rgb(58, 58, 58);
+}
+
+.side-style {
+    background-color: #3D3D4B;
+}
+
+.image-perfil {
+    border: 5px solid white;
+}
+
+.icon-section-margin {
+    margin-top: 10px !important;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+.icon-align {
+    vertical-align: middle; padding-bottom: 3px
+}
+.menu-align {
+}
+
+div a i:hover{
+    color: #fff;
+}
+
+ul li a {
+    color: white;
+    font-size: x-large;
+}
+
+ul li a:hover {
+    color: #FF1C4C;
+}
+
+#content {
+    max-height: 100vh !important;
+    overflow: scroll;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+#content a {
+    color: #FF1C4C;
+    font-size: medium !important;
+}
+
+#content a:hover {
+    color: rgb(58, 58, 58);
+}
+
+#content ul {
+    text-align: justify !important;
+}
+
+#content blockquote {
+    border-left: 5px solid #FF1C4C !important;
+}
+
+.table-list-float {
+    float: left !important;
+}
+
+.table-list-padding {
+    padding-left: 10px;
+}
+
+.table-item-padding {
+    padding-bottom: 0px !important;
+    padding-top: 5px !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+    word-wrap: break-word;
+}
+
+.on-left-padding {
+    padding-top: 10px !important;
+    padding-left: 20px !important;
+}
+
+.card-size {
+  width:295px;
+  height:320px;
+}
+
+.card-image-size {
+  width:295px;
+  height:170px;
+}
+
+.justify-text {
+    text-align: justify !important;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
