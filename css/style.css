@@ -3,9 +3,12 @@
 }
 
 .icon-color {
-    color: #FF1C4C;
+    color: #FF1C4C !important;
 }
 
+.nav-color {
+    background-color: #FF1C4C !important;
+}
 .menu-padding {
     padding-top: 50px !important;
     padding-right: 20px !important;
