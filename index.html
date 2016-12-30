@@ -10,9 +10,20 @@
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
 	</head>
 	<body class="">
+		<nav class="hide-on-med-and-up nav-color">
+			<div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a class="" href="">about</a></li>
+					<li><a class="" href="#" onclick="changeDiv(1)">resume</a></li>
+					<li><a class="" href="#" onclick="changeDiv(2)">blog</a></li>
+					<li><a class="" href="#" onclick="changeDiv(3)">projects</a></li>
+				</ul>
+			</div>
+		</nav>
 		<div id="page-body">
-			<div class="row" id="side-menu">
-				<div class="col s4 m4 l4 menu-padding max-height side-style">
+			<div class="row">
+				<div class="col s4 m4 l4 menu-padding max-height side-style hide-on-small-only">
 					<div class="row center">
 						<div class="col s12 m12 l12">
 							<img class="image-perfil circle responsive-img" src="./imgs/photo.png" title="Hello :)" width="256px" height="256px">
@@ -48,7 +59,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s8 m8 l8 content-style">
+				<div class="content-style">
 					<div class="row">
 						<div class="white max-height" id="content">
 							<div class="no-padding col s12 m12 l12">
