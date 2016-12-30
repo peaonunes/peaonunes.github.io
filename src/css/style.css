@@ -117,3 +117,8 @@ ul li a:hover {
 .justify-text {
     text-align: justify !important;
 }
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
