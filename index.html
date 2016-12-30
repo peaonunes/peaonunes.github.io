@@ -4,185 +4,316 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 		<title>Rafael Nunes</title>
-
-		<!-- I know this code is not beatiful, gotta work more on int -->
-		<!-- CSS  -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
 	</head>
-	<body>
-		<div class="navbar-fixed">
-			<nav class="red accent-4" role="navigation">
-				<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Rafael Nunes</a>
-					<ul class="right hide-on-med-and-down">
-						<li><a href="#" onclick="changeDiv(4)">Home</a></li>
-						<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
-						<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
-						<li><a href="#" onclick="changeDiv(3)">Portfolio</a></li>
+	<body class="">
+		<div id="page-body">
+			<div class="row" id="side-menu">
+				<div class="col s4 m4 l4 menu-padding max-height side-style">
+					<div class="row center">
+						<div class="col s12 m12 l12">
+							<img class="image-perfil circle responsive-img" src="./imgs/photo.png" title="Hello :)" width="256px" height="256px">
+						</div>
+						<div class="col s12 m12 l12 icon-section-margin">
+							<a target="_blank" class="icon-color" href="https://www.linkedin.com/in/rngds">
+								<i class="mdi mdi-linkedin-box icon-align medium material-icons"></i>
+							</a>
+							<a target="_blank" class="icon-color" href="https://github.com/peaonunes">
+								<i class="mdi mdi-github-circle icon-align medium material-icons"></i>
+							</a>
+							<a target="_blank" class="icon-color" href="mailto:rafaelngds@gmail.com">
+								<i class="medium icon-align material-icons">mail</i>
+							</a>
+						</div>
+						<div class="col s12 m12 l12">
+							<p class="light bio-style white-text">I am a Computer Scientist looking forward to build and to work on projects that generates impact!
+								<br><br>I love Innovation and I like to play around with mobile computing, web apps, data science, software engeneering.</p>
+							<div class="divider white"></div>
+						</div>
+						<br>
+						<br>
+						<div class="col s12 m12 l12 right-align">
+							<ul>
+								<li><a href="">about</a></li>
+								<li><a href="#" onclick="changeDiv(1)">resume</a></li>
+								<li><a href="#" onclick="changeDiv(2)">blog</a></li>
+								<li><a href="#" onclick="changeDiv(3)">projects</a></li>
+							</ul>
+						</div>
+						<div class="col s12 m12 l12 center">
+							<p class="white-text"><small><b>@ 2017 Rafael Nunes</b>. I guess some rights are reserved.</small><p>
+						</div>
+					</div>
+				</div>
+				<div class="col s8 m8 l8 content-style">
+					<div class="row">
+						<div class="white max-height" id="content">
+							<div class="no-padding col s12 m12 l12">
+								<h2 class="">Rafael Nunes</h2>
+								<div class="divider">
+								</div>
+							</div>
+							<div id="dynamic" class="no-padding col s12 m12 l12">
+								<h4>Hello mate, come closer =]</h4>
+								<h5 class="light">I struggle to build a kind fancy website, but I won't give up.</h5>
+								<h6>Actually that's my newest attempt.</h6>
+							</div>
+							<br>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+		<script src="./js/onClickAction.js"></script>
+	</body>
+</html>
+
+<div class="container" style="display: none;" id="mainResume">
+	<div class="no-padding col s12 m12 l12">
+		<h2 class="">Rafael Nunes</h2>
+		<div class="divider">
+		</div>
+	</div>
+	<div class="no-padding col s12 m12 l12">
+		<p>Phone: + 55 81 9 97587600<p>
+
+		<div class="row">
+			<div class="no-padding col s2 m2 l2">
+				<h4><i>Education</i></h4>
+			</div>
+			<div class="on-left-padding col s10 m10 l10">
+				<p>Jan 2011 - Dec 2016: <b>Center of Informatics (CIn), Federal University of Pernambuco, Recife-PE, Brasil</b>.</p>
+				<blockquote>
+					<p>Bachelor Computer Science, GPA: 82.9/100</p>
+				</blockquote>
+				<p>Jan 2014 - Jan 2015: <b>University Of Liverpool, Liverpool, United Kingdom</b>.</p>
+				<blockquote>
+					<ul>
+						<li>Electronic Commerce Computing BSc</li>
+						<li>Exchange Undergraduate Student by Science without Borders Program</p></li>
 					</ul>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="no-padding col s2 m2 l2">
+				<h4><i>Skills</i></h4>
+			</div>
+			<div class="on-left-padding col s10 m10 l10">
+				<h5>Programming Skills</h5>
+				<blockquote>
+					<table>
+						<thead>
+							<th>Working experience</th>
+							<th>Coursework experience</th>
+							<th>Some experience</th>
+						</thead>
+						<tbody>
+							<td class="table-item-padding">
+								<ul>
+									<li>Java</li>
+									<li>C#</li>
+								</ul>
+							</td>
+							<td class="table-item-padding">
+								<ul class="table-list-float">
+									<li>JavaScript</li>
+									<li>Three.js</li>
+									<li>D3.js</li>
 
-					<ul id="nav-mobile" class="side-nav">
-						<li><a href="#" onclick="changeDiv(4)">Home</a></li>
-						<li><a href="#" onclick="changeDiv(1)">Resume</a></li>
-						<li><a href="#" onclick="changeDiv(2)">Blog</a></li>
-						<li><a href="#" onclick="changeDiv(3)">Portfolio</a></li>
+								</ul>
+								<ul class="table-list-float table-list-padding">
+									<li>HTML/CSS</li>
+									<li>Python</li>
+									<li>Swift</li>
+								</ul>
+							</td>
+							<td class="table-item-padding">
+								<ul class="table-list-float">
+									<li>Redux</li>
+									<li>Webpack</li>
+									<li>NodeJS</li>
+								</ul>
+								<ul class="table-list-float table-list-padding">
+									<li>Typescript</li>
+									<li>Matlab</li>
+									<li>RDF/OWL</li>
+								</ul>
+							</td>
+						</tbody>
+					</table>
+				</blockquote>
+
+				<h5>Technical and Tools</h5>
+				<blockquote>
+					<p>Software and Data Visualization, Scrum, BPMN, Continuous Delivery, Ranorex, KNIME, Unity, Visual Studio, XCode, Eclipse, GIT, TFS, PowerShell, Windows, OSX.</p>
+				</blockquote>
+
+				<h5>Languages</h5>
+				<blockquote>
+					<p>Native Portuguese, Advanced English</p>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="no-padding col s2 m2 l2">
+				<h4><i>Experience</i></h4>
+			</div>
+			<div class="on-left-padding col s10 m10 l10">
+				<p><b><a href="http://suati.com.br" target="_blank">SUATI</a>, Recife, Brazil - Software Development Engineer Intern</b> Apr 2015 - Jan 2016</p>
+				<blockquote>
+					<ul>
+						<li>Working on internal tools and "GENE" market leader in internal process management of energy market of Brazil, this platform runs in C# and supports Oracle and SQLServer.</li>
+						<li>Moved to work in a internal project related to Continuous Delivery and UI Automated Tests. Collaborating with my team in the creation of an infrastructure of Continuous Delivery and an infrastructure to write tests, run and build reports. Working with Ranorex platform as part of the project, developing an internal IDE as an extension of Visual Studio to help testers write, maintain and run better tests cases and quickly.</li>
 					</ul>
-					<a target="_blank" href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-				</div>
-			</nav>
-		</div>
+				</blockquote>
 
-		<div class="container" id="main">
+				<p><b><a href="https://pet-informatica.github.io" target="_blank">PET-Informática</a>, Federal University of Pernambuco, Recife, Brazil - Member</b> Mar 2013 - Today</p>
+				<blockquote>
+					<ul>
+						<li>Developing projects (programming, social and environmental) for improving the graduation, department and the community life. Organising workshops, talks, events at the department.</li>
+						<li>Organised the national meeting of PETs (ENAPET 2013) groups for 1500 attendees.</li>
+						<li>Proposed and organised first Olimpiada Pernambucana de Informatica (Pernambuco Olympiad in Informatics, 2015, 2016). Official website: <a target="_blank" href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a></li>
+						<li>Design and developed a Unity based Game for helping freshers students to get used to some department rules. Available in: <a target="_blank" href="https://github.com/pet-informatica/CinQuest">CInQuest</a></li>
+					</ul>
+				</blockquote>
 
-			<div id="top" class="row">
-				<br><br>
-
-				<div class="col s12 m12 center">
-					<img class="circle responsive-img" src="imgs/photo.png" alt="hey" width="128px" height="128px">
-				</div>
-
-				<div class="col s12 m12 center">
-					<h4>Hello mate, come closer =]</h4>
-				</div>
-
-				<div class="col s12 m12 center">
-					<h6 class="light">I clearly don't know how to build a fancy website, but I won't give up.</h6>
-				</div>
-			</div>
-
-			<div class="section" id="content">
-				<!--   Icon Section   -->
-				<div class="row">
-					<div class="col s12 m4" onclick="changeDiv(1);" title="Click to read my resume." id="mouseHover">
-						<div class="icon-block">
-							<h2 class="center red-text"><i class="material-icons">person_pin</i></h2>
-							<h5 class="center">Resume</h5>
-							<p class="light center">Overview about me and my interests.</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4" onclick="changeDiv(2)" title="Click to read my posts." id="mouseHover">
-						<div class="icon-block">
-								<h2 class="center red-text"><i class="material-icons">chat</i></h2>
-								<h5 class="center">Blog</h5>
-								<p class="light center">My attempts to write about something.</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4" onclick="changeDiv(3)" title="Click to see my projects." id="mouseHover">
-						<div class="icon-block">
-							<h2 class="center red-text"><i class="material-icons">new_releases</i></h2>
-							<h5 class="center">Projects</h5>
-							<p class="light center">Some independent and coursework projects.</p>
-						</div>
-					</div>
-				</div>
+				<p><b>Stig Co, Recife, Brazil - CEO &amp; CO-Founder</b> Jan 2013 - Jan 2014</p>
+				<blockquote>
+					<ul>
+						<li>Startup - Led project management and developing Client/Server iOS Application, running Lean Startup methodology.</li>
+					</ul>
+				</blockquote>
 			</div>
 		</div>
-
-		<footer class="page-footer grey darken-2">
-			<div class="container">
-				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="white-text">Rafael Nunes G. da Silveira</h5>
-						<p class="grey-text text-lighten-4">All we really wanna know is can you keep up?</p>
-					</div>
-					<div class="col l3 s12">
-						<h5 class="white-text">Connect</h5>
-						<ul>
-							<li><a target="_blank" class="red-text text-lighten-2 hoverable" href="http://www.github.com/peaonunes">GitHub</a></li>
-							<li><a target="_blank" class="red-text text-lighten-2 hoverable" href="http://www.linkedin.com/in/rngds">LinkedIn</a></li>
-							<li><a target="_blank" class="red-text text-lighten-2 hoverable" href="mailto:rafaelngds@gmail.com">Gmail 1</a></li>
-							<li><a target="_blank" class="red-text text-lighten-2 hoverable" href="mailto:rngs@cin.ufpe.br">Gmail 2</a></li>
-						</ul>
-					</div>
-				</div>
+		<div class="row">
+			<div class="no-padding col s2 m2 l2">
+				<h4><i>Teaching</i></h4>
 			</div>
-			<div class="container">
-	            <div ="row">
-	                <div ="col s6 m6 l6">
-	                    <label for="linkToGo">Paste your url bellow. Type it using "http:://" prefix.</label>
-	                    <input value="http://peaonunes.github.io/" name="inputLink" type="text" id="linkToGo"><br>
-	                    <button type="button" onclick="RedirecToLink()">GO!</button>
-	                </div>
-	            </div>
-	        </div>
-			<div class="footer-copyright">
-				<div class="container">
-				Made using <a target="_blank" class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-				</div>
-			</div>
-		</footer>
+			<div class="on-left-padding col s10 m10 l10">
+				<p><b>Volunteering Teaching Assistant at CIn, Federal University of Pernambuco:</b></p>
+				<blockquote>
+					<ul>
+						<li>Jan 2013 - Jan 2014: Theory of Computation</li>
+						<li>Jan 2013 - Jan 2014: Software Engineering and Systems</li>
+						<li>Jan 2012 - Jan 2013: Statistics and Probability for Computing</li>
+					</ul>
+				</blockquote>
 
-		<div class="container" style="display: none;" id="mainSite" >
-			<div id="top" class="row">
-				<br><br>
+				<p><b>Volunteering Teaching at PET-Informática, Federal University of Pernambuco:</b></p>
+				<blockquote>
+					<ul>
+						<li>Oct 2013, May and Oct 2015, May and Oct 2016 - Teaching Microsoft Office and Internet for UFPE employees and people from neighboring communities.</li>
+						<li>Jan 2016 - Introducing Computer Science and Python for High School students.</li>
+					</ul>
+				</blockquote>
 
-				<div class="col s12 m12 center">
-					<img class="circle responsive-img" src="imgs/photo.png" alt="hey" width="128px" height="128px">
-				</div>
-
-				<div class="col s12 m12 center">
-					<h4>Hello mate, come closer =]</h4>
-				</div>
-
-				<div class="col s12 m12 center">
-					<h6 class="light">I clearly don't know how to build a fancy website, but I won't give up.</h6>
-				</div>
-			</div>
-
-			<div class="section" id="content">
-				<!--   Icon Section   -->
-				<div class="row">
-					<div class="col s12 m4" onclick="changeDiv(1);" title="Click to read my resume." id="mouseHover">
-						<div class="icon-block">
-							<h2 class="center red-text"><i class="material-icons">person_pin</i></h2>
-							<h5 class="center">Resume</h5>
-							<p class="light center">Overview about me and my interests.</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4" onclick="changeDiv(2)" title="Click to read my posts." id="mouseHover">
-						<div class="icon-block">
-								<h2 class="center red-text"><i class="material-icons">chat</i></h2>
-								<h5 class="center">Blog</h5>
-								<p class="light center">My attempts to write about something.</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4" onclick="changeDiv(3)" title="Click to see my projects." id="mouseHover">
-						<div class="icon-block">
-							<h2 class="center red-text"><i class="material-icons">new_releases</i></h2>
-							<h5 class="center">Projects</h5>
-							<p class="light center">Some independent and coursework projects.</p>
-						</div>
-					</div>
-				</div>
+				<p><b>Teaching Assistant at Boa Viagem High School:</b></p>
+				<blockquote>
+					<ul>
+						<li>2011 - 2013: Mathematics and Chemistry</li>
+					</ul>
+				</blockquote>
 			</div>
 		</div>
-
-		<div class="container" style="display: none;" id="mainProjects">
-
-			<br><br>
-
-			<div class="center">
-				<h5>Some independent and coursework projects</h5>
-				<p>They could have only a portuguese description.</p>
+		<div class="row">
+			<div class="no-padding col s2 m2 l2">
+				<h4><i>Honours</i></h4>
 			</div>
+			<div class="on-left-padding col s10 m10 l10">
+				<b>Honours, Mentions &amp; Awards</b>
+				<blockquote>
+					<ul>
+						<li>Brazil Scientific Mobility Program Scholarship Recipient (2014)</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="no-padding col s2 m2 l2">
+				<h4><i>Independent Coursework</i></h4>
+			</div>
+			<div class="on-left-padding col s10 m10 l10">
+				<blockquote>
+					<ul>
+						<li><a target="_blank" href="https://www.coursera.org/learn/big-data-cloud-computing-cdn">Big Data, Cloud Computing, &amp; CDN Emerging Technologies</a> by Yonsei University (Coursera)</li>
+						<li><a target="_blank" href="https://www.coursera.org/learn/introduction-to-software-product-management">Introduction to Software Product Management</a> by University of Alberta (Coursera)</li>
+						<li><a target="_blank" href="https://www.coursera.org/learn/aplicativo-para-iphone">Como criar um aplicativo para iPhone</a> by Universidade Estadual de Campinas (Coursera)</li>
+						<li><a target="_blank" href="https://www.coursera.org/learn/multiplas-telas-iphone/">Como criar aplicativos com múltiplas telas para iPhone e iPad</a> by Universidade Estadual de Campinas (Coursera)</li>
+						<li><a target="_blank" href="https://www.coursera.org/learn/ios-avancado">Como aprimorar e monetizar seu aplicativo para iOS e Apple Watch</a> by Universidade Estadual de Campinas (Coursera)</li>
+						<li><a target="_blank" href="https://www.coursera.org/course/designbiz">Design Thinking for Business Innovation</a> by University of Virginia (Coursera)</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="no-padding col s2 m2 l2">
+				<h4><i>Personal Interests</i></h4>
+			</div>
+			<div class="on-left-padding col s10 m10 l10">
+				<blockquote>
+					<ul>
+						<li>Sport Club of Recife supporter!</li>
+						<li>I love sports! But I play more often football and tennis.</li>
+						<li>Editing and producing videos.</li>
+						<li>In love with heavy metal, rock, punk, hiphop, rap, house, trance, yes I’m eclectic.</li>
+					</ul>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</div>
 
-			<div class="row center">
+<div class="container" style="display: none;" id="mainBlog">
+	<div class="no-padding col s12 m12 l12">
+		<h2 class="">Rafael Nunes</h2>
+		<div class="divider">
+		</div>
+	</div>
+	<div class="no-padding col s12 m12 l12">
+		<script async src="https://static.medium.com/embed.js"></script>
+		<a target="_blank" class="m-profile" data-width="100%" data-collapsed="false" href="https://medium.com/@peaonunes">Rafael Nunes</a>
+	</div>
+</div>
 
+<div class="container" style="display: none;" id="mainProjects">
+	<div class="no-padding col s12 m12 l12">
+		<h2 class="">Rafael Nunes</h2>
+		<div class="divider">
+		</div>
+	</div>
+
+	<div class="no-padding col s12 m12 l12">
+		<h5>Some cool independent and coursework projects that I've done.</h5>
+		<p>*Some could only have a portuguese description.</p>
+
+		<div class="no-padding row">
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="https://github.com/peaonunes/swiftcity"><img src="imgs/alamofire.png" class="card-image-size"></a>
+						<img src="imgs/alamofire.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title">Swicity</p>
+						<span class="card-title activator grey-text text-darken-4">SwiftCity<i class="material-icons right">more_vert</i></span>
+						<p>Visualize Software Systems written in Swift as cities!</p>
+						<a target="_blank" href="https://swiftcity.github.io/website">Website</a> |
+						<a target="_blank" href="https://github.com/swiftcity">GitHub</a> |
+						<a target="_blank" href="./files/tg-rngs.pdf">Document</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title grey-text text-darken-4">SwiftCity<i class="material-icons right">close</i></span>
 						<p>Visualizating Swift Systems as cities. Graduation project under the tutorship of Professor <a href="https://sites.google.com/a/cin.ufpe.br/castor/" target="_blank">Fernando Castor</a>.</p>
-						<a target="_blank" href="https://peaonunes.github.io/swiftcity/">Website</a> |
-						<a target="_blank" href="https://github.com/peaonunes/swiftcity">Github</a> |
+						<a target="_blank" href="https://swiftcity.github.io/website">Website</a> |
+						<a target="_blank" href="https://github.com/swiftcity">GitHub</a> |
 						<a target="_blank" href="./files/tg-rngs.pdf">Document</a>
 					</div>
 				</div>
@@ -191,13 +322,19 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="https://github.com/pet-informatica/CinQuest"><img src="imgs/cinquest.png" class="card-image-size"></a>
+						<img src="imgs/cinquest.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title"> CInQuest</p>
+						<span class="card-title activator grey-text text-darken-4">CInQuest<i class="material-icons right">more_vert</i></span>
+						<p>PET-Informática's playable guide to freshers students of CIn.</p>
+						<a target="_blank" href="https://pet-informatica.github.io/cinquest">Website</a> |
+						<a target="_blank" href="https://github.com/pet-informatica/CinQuest">GitHub</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title activator grey-text text-darken-4">CInQuest<i class="material-icons right">close</i></span>
 						<p>PET-Informática project, RPG Game based on Unity to help freshers deal with their firsts challenges in department.</p>
 						<a target="_blank" href="https://pet-informatica.github.io/cinquest">Website</a> |
-						<a target="_blank" href="https://github.com/pet-informatica/CinQuest">Github</a>
+						<a target="_blank" href="https://github.com/pet-informatica/CinQuest">GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -205,12 +342,20 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href=""><img src="imgs/data-visualization.png" class="card-image-size"></a>
+						<img src="imgs/data-visualization.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title"><a target="_blank" href="http://www.cin.ufpe.br/~nivan/teaching/data_vis/fall_2016/website/">Data Visualization</a></p>
+						<span class="card-title activator grey-text text-darken-4">Data Visualization<i class="material-icons right">more_vert</i></span>
+						<p><a target="_blank" href="http://www.cin.ufpe.br/~nivan/teaching/data_vis/fall_2016/website/">Data Visualization</a> course projects.</p>
+						<a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents</a> |
+						<a target="_blank" href="https://peaonunes.github.io/edurec-vis-visualizacao-2016-2/">Recife's Municipal education</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title activator grey-text text-darken-4">Data Visualization<i class="material-icons right">close</i></span>
 						<p>Assigment made in D3.js about <a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents (Recife)</a></p>
 						<p>Final project about Recife's Education, online at <a target="_blank" href="http://peaonunes.github.io/dv/acidentes">GitHubPages</a> and repository on <a target="_blank" href="https://github.com/peaonunes/edurec-vis-visualizacao-2016-2">GitHub</a>. Made with D3, Webpack and Redux.</p>
+						<a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents</a> |
+						<a target="_blank" href="https://peaonunes.github.io/edurec-vis-visualizacao-2016-2/">Recife's Municipal education</a>
 					</div>
 				</div>
 			</div>
@@ -218,12 +363,17 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="https://github.com/peaonunes/ColorMatches"><img src="imgs/colorMatches.png" class="card-image-size"></a>
+						<img src="imgs/colorMatches.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title"> ColorMatches!</p>
+						<span class="card-title activator grey-text text-darken-4">ColorMatches!<i class="material-icons right">more_vert</i></span>
+						<p>Swift basic game made for coursera assignment.</p>
+						<a target="_blank" href="https://github.com/peaonunes/ColorMatches">GitHub</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title activator grey-text text-darken-4">ColorMatches!<i class="material-icons right">close</i></span>
 						<p>Simple game made as an assignment for <a target="_blank" href="https://www.coursera.org/learn/multiplas-telas-iphone/">Como criar aplicativos com múltiplas telas para iPhone e iPad</a> by Universidade Estadual de Campinas (Coursera).</p>
-						<a target="_blank" href="https://github.com/peaonunes/ColorMatches">Github</a>
+						<a target="_blank" href="https://github.com/peaonunes/ColorMatches">GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -231,12 +381,17 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="http://bit.ly/DataManing-CostumersComplaints"><img src="imgs/costumer.png" class="card-image-size"></a>
+						<img src="imgs/costumer.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title">Costumers Complaints</p>
+						<span class="card-title grey-text text-darken-4">Complaints Mining<i class="material-icons right">more_vert</i></span>
+						<p>Data Mining Approach for Evaluating the Solution of Costumer Complaints.</p>
+						<a target="_blank" href="http://bit.ly/DataManing-CostumersComplaints">Article</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title activator grey-text text-darken-4">Complaints Mining<i class="material-icons right">close</i></span>
 						<p>A Data Mining Approach for Evaluating the Solution of Costumer Complaints (not published), main project of <a href="http://www.cin.ufpe.br/~compint/aulas-IAS/kdd-122/" target="_blank">IF795, Decision an Data Mining Support Systems</a>.</p>
-						<a target="_blank" href="http://bit.ly/DataManing-CostumersComplaints">Paper</a>
+						<a target="_blank" href="http://bit.ly/DataManing-CostumersComplaints">Article</a>
 					</div>
 				</div>
 			</div>
@@ -244,12 +399,17 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject"><img src="imgs/neural.png" class="card-image-size"></a>
+						<img src="imgs/neural.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title">Neural Network Project</p>
+						<span class="card-title grey-text text-darken-4">NN Project<i class="material-icons right">more_vert</i></span>
+						<p>Try to achieve the best performance for a NN's on breast cancer database.</p>
+						<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">GitHub</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title grey-text text-darken-4">NN Project<i class="material-icons right">close</i></span>
 						<p>Use of a Neural Network focusing on achieve its best performance applied to a breast cancer detection database. Project of <a targe="_blank" href="http://www.cin.ufpe.br/~gcv/web_lci/intro.html">IF702, Neural Networks</a>.</p>
-						<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">Github</a>
+						<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -257,12 +417,17 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="https://github.com/Valbrand/aps-politique-node"><img src="imgs/politique.jpg" class="card-image-size"></a>
+						<img src="imgs/politique.jpg" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title">Politique?</p>
-						Design and implementation of a Web Application (NodeJS) as main project of <a target="_black" href="http://www.cin.ufpe.br/~if718/">IF718, Software Analysis and Design</a>.
-						<br><a target="_blank" href="https://github.com/Valbrand/aps-politique-node">Github</a>
+						<span class="card-title grey-text text-darken-4">Politique?<i class="material-icons right">more_vert</i></span>
+						<p>Software Architecture, design and implementation of a Web Application.</p>
+						<a target="_blank" href="https://github.com/Valbrand/aps-politique-node">GitHub</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title grey-text text-darken-4">Politique?<i class="material-icons right">close</i></span>
+						<p>Software Architecture, design and implementation of a Web Application (NodeJS) as main project of <a target="_black" href="http://www.cin.ufpe.br/~if718/">IF718, Software Analysis and Design</a>.
+						<br><a target="_blank" href="https://github.com/Valbrand/aps-politique-node">GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -270,10 +435,15 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="http://bit.ly/InspecaodeSoftware"><img src="imgs/costumer.png" class="card-image-size"></a>
+						<img src="imgs/quality.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title">Software Inspection</p>
+						<span class="card-title grey-text text-darken-4">Software Inspection<i class="material-icons right">more_vert</i></span>
+						<p>Software Inspection for QoS, under a Theoretical look and Enterprise usage.</p>
+						<a target="_blank" href="http://bit.ly/InspecaodeSoftware">Article</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title grey-text text-darken-4">Software Inspection<i class="material-icons right">close</i></span>
 						<p>Research (not published) of Software Inspection under a Theoretical look, Enterprise usage and Software Quality. Produced for <a targe="_blank" href="http://www.cin.ufpe.br/~if720/index.htm">IF720, Software Quality</a>.</p>
 						<a target="_blank" href="http://bit.ly/InspecaodeSoftware">Paper</a>
 					</div>
@@ -283,172 +453,21 @@
 			<div class="col s12 m4 l4">
 				<div class="card card-size hoverable">
 					<div class="card-image">
-						<a target="_blank" href="https://github.com/peaonunes/impt"><img src="imgs/ipmt.png" class="card-image-size"></a>
+						<img src="imgs/ipmt.png" class="activator card-image-size">
 					</div>
 					<div class="card-content">
-						<p class="card-title"> IPMT</p>
+						<span class="card-title grey-text text-darken-4">IPMT<i class="material-icons right">more_vert</i></span>
+						<p>Index Pattern Matching Tool</p>
+						<a target="_blank" href="https://github.com/peaonunes/impt">GitHub</a>
+					</div>
+					<div class="card-reveal justify-text">
+						<span class="card-title grey-text text-darken-4">IPMT<i class="material-icons right">close</i></span>
 						<p>Implementation of an Index Pattern Matching Tool second project of <a targe="_blank" href="http://www.cin.ufpe.br/~paguso/courses/if767/2015-2/">IF767, PCC</a>.</p>
-						<a target="_blank" href="https://github.com/peaonunes/impt">Github</a>
+						<a target="_blank" href="https://github.com/peaonunes/impt">GitHub</a>
 					</div>
 				</div>
 			</div>
-
-			</div>
-
-			<div class="github-card" data-width="100%" style="height: 100px;" data-user="peaonunes"></div>
 		</div>
 
-		<div class="container" style="display: none;" id="mainBlog">
-			<br><br>
-
-			<div class="col s12" id="content">
-				<script async src="https://static.medium.com/embed.js"></script>
-				<a target="_blank" class="m-profile" data-width="100%" data-collapsed="false" href="https://medium.com/@peaonunes">Rafael Nunes</a>
-			</div>
-		</div>
-
-		<div class="container" style="display: none;" id="mainResume">
-
-			<br>
-			<p>Interested specially in Innovation, Mobile Computing, Data Science, Software Engineering, Project Management. Looking forward to build and work on something that generates impact! </p>
-			<p>Email: <a target="_blank" href="rafaelngds@gmail.com">rafaelngds@gmail.com</a></p>
-			<p>Phone: + 55(81)997587600<p>
-			<hr>
-
-			<h3><a target="_blank" id="Education_0"></a>Education</h3>
-
-			<p><strong>Center of Informatics (CIn), Federal University of Pernambuco, Recife-PE, Brasil</strong>
-			Jan, 2011 - Expected Dec, 2016</p>
-
-			<blockquote>
-				<p>Bachelor Computer Science, GPA: 80.5</p>
-			</blockquote>
-
-			<p><strong>University Of Liverpool, Liverpool, United Kingdom</strong>  Jan, 2014 - Jan, 2015</p>
-			<blockquote>
-				<ul>
-					<li>Electronic Commerce Computing BSc</li>
-					<li>Exchange Undergraduate Student by Science without Borders Program</p></li>
-				</ul>
-			</blockquote>
-
-			<h3><a target="_blank" id="Skills_10"></a>Skills</h3>
-			<p><strong>Programming</strong></p>
-			<blockquote>
-				<ul>
-					<li><strong>Working experience</strong> in products using Java and C#</li>
-					<li><strong>Coursework experience</strong> with JavaScript, Three.js, D3.js, Python, Matlab, Swift</li>
-					<li><strong>Some experience</strong> with Redux, Webpack, NodeJS/Typescript, HTML/CSS, RDF/OWL</li>
-				</ul>
-			</blockquote>
-
-			<p><strong>Technical and Tools</strong></p>
-			<blockquote>
-				<p>Software and Data Visualization, Scrum, BPMN, Continuous Delivery, Ranorex, KNIME, Unity, Visual Studio, XCode, Eclipse, GIT, TFS, PowerShell, Windows, OSX.</p>
-			</blockquote>
-
-			<p><strong>Languages</strong></p>
-			<blockquote>
-				<p>Native Portuguese, Advanced English</p>
-			</blockquote>
-
-			<h3><a target="_blank" id="Professional_Experience_24"></a>Professional Experience</h3>
-			<p><strong><a href="http://suati.com.br" target="_blank">SUATI</a>, Recife, Brazil - Software Development Engineer Intern</strong> Apr, 2015 - Jan, 2016</p>
-			<blockquote>
-				<ul>
-					<li>Working on internal tools and "GENE" market leader in internal process management of energy market of Brazil, this platform runs in C# and supports Oracle and SQLServer.</li>
-					<li>Moved to work in a internal project related to Continuous Delivery and UI Automated Tests. Collaborating with my team in the creation of an infrastructure of Continuous Delivery and an infrastructure to write tests, run and build reports. Working with Ranorex platform as part of the project, developing an internal IDE as an extension of Visual Studio to help testers write, maintain and run better tests cases and quickly.</li>
-				</ul>
-			</blockquote>
-
-			<p><strong>Stig Co, Recife, Brazil - CEO &amp; CO-Founder</strong> Jan, 2013 - Jan, 2014</p>
-			<blockquote>
-				<ul>
-					<li>Startup - Led project management and developing Client/Server iOS Application, running Lean Startup methodology.</li>
-				</ul>
-			</blockquote>
-
-			<p><strong>PET-Informática, Federal University of Pernambuco, Recife, Brazil - Member</strong> Mar 2013 - Today</p>
-			<blockquote>
-				<ul>
-					<li><a href="https://pet-informatica.github.io" target="_blank">Website</a></li>
-					<li>Developing projects (programming, social and environmental) for improving the graduation, department and the community life. Organising workshops, talks, events at the department.</li>
-					<li>Organised the national meeting of PETs (ENAPET 2013) groups for 1500 attendees.</li>
-					<li>Proposed and organised first Olimpiada Pernambucana de Informatica (Pernambuco Olympiad in Informatics, 2015, 2016). Official website: <a target="_blank" href="http://www.cin.ufpe.br/~pet/opei/">OPEI</a></li>
-					<li>Design and developed a Unity based Game for helping freshers students to get used to some department rules. Available in: <a target="_blank" href="https://github.com/pet-informatica/CinQuest">CInQuest</a></li>
-				</ul>
-			</blockquote>
-
-			<h3><a target="_blank" id="Teaching_Experience_43"></a>Teaching Experience</h3>
-
-			<p><strong>Volunteering Teaching Assistant at CIn, Federal University of Pernambuco:</strong></p>
-			<blockquote>
-				<ul>
-					<li>Jan, 2013 - Jan, 2014: Theory of Computation</li>
-					<li>Jan, 2013 - Jan, 2014: Software Engineering and Systems</li>
-					<li>Jan, 2012 - Jan, 2013: Statistics and Probability for Computing</li>
-				</ul>
-			</blockquote>
-
-			<p><strong>Volunteering Teaching at PET-Informática, Federal University of Pernambuco:</strong></p>
-			<blockquote>
-				<ul>
-					<li>Oct, 2013, May and Oct 2015 - Teaching Windows, Word, Excel, Powerpoint, Internet for UFPE employees and people from neighboring communities.</li>
-					<li>Jan, 2016 - Introducing Computer Science and Python for High School students.</li>
-				</ul>
-			</blockquote>
-
-			<p><strong>Teaching Assistant at Boa Viagem High School:</strong></p>
-			<blockquote>
-				<ul>
-					<li>2011 - 2013: Mathematics and Chemistry</li>
-				</ul>
-			</blockquote>
-
-			<h3><a target="_blank" id="Honours_Stuff"></a>Honours, Mentions &amp; Awards</h3>
-			<blockquote>
-				<ul>
-					<li>Brazil Scientific Mobility Program Scholarship Recipient (2014)</li>
-				</ul>
-			</blockquote>
-
-			<h3><a target="_blank" id="Independent_Coursework"></a>Independent Coursework</h3>
-			<blockquote>
-				<ul>
-					<li><a target="_blank" href="https://www.coursera.org/learn/big-data-cloud-computing-cdn">Big Data, Cloud Computing, &amp; CDN Emerging Technologies</a> by Yonsei University (Coursera)</li>
-					<li><a target="_blank" href="https://www.coursera.org/learn/introduction-to-software-product-management">Introduction to Software Product Management</a> by University of Alberta (Coursera)</li>
-					<li><a target="_blank" href="https://www.coursera.org/learn/aplicativo-para-iphone">Como criar um aplicativo para iPhone</a> by Universidade Estadual de Campinas (Coursera)</li>
-					<li><a target="_blank" href="https://www.coursera.org/learn/multiplas-telas-iphone/">Como criar aplicativos com múltiplas telas para iPhone e iPad</a> by Universidade Estadual de Campinas (Coursera)</li>
-					<li><a target="_blank" href="https://www.coursera.org/learn/ios-avancado">Como aprimorar e monetizar seu aplicativo para iOS e Apple Watch</a> by Universidade Estadual de Campinas (Coursera)</li>
-					<li><a target="_blank" href="https://www.coursera.org/course/designbiz">Design Thinking for Business Innovation</a> by University of Virginia (Coursera)</li>
-				</ul>
-			</blockquote>
-
-			<h3><a target="_blank" id="Personal_Interests_60"></a>Personal Interests</h3>
-			<blockquote>
-				<ul>
-					<li>Sport Club of Recife supporter!</li>
-					<li>Fitness and Sports like Running, Football, Tennis…</li>
-					<li>Editing and producing videos.</li>
-					<li>In love with heavy metal, rock, punk, hiphop, rap, house, trance, yes I’m eclectic.</li>
-				</ul>
-			</blockquote>
-		</div>
-
-		<!--  Scripts-->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="js/materialize.js"></script>
-		<script src="js/init.js"></script>
-		<script src="http://lab.lepture.com/github-cards/widget.js"></script>
-		<script src="./js/onClickAction.js"></script>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-85184222-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</body>
-</html>
+	</div>
+</div>

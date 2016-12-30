@@ -1,12 +1,12 @@
 function changeDiv(i){
 	if (i == 3)
-		document.getElementById("main").innerHTML = document.getElementById("mainProjects").innerHTML;
+		document.getElementById("content").innerHTML = document.getElementById("mainProjects").innerHTML;
 	else if (i == 2)
-		document.getElementById("main").innerHTML = document.getElementById("mainBlog").innerHTML;
+		document.getElementById("content").innerHTML = document.getElementById("mainBlog").innerHTML;
 	else if (i == 1)
-		document.getElementById("main").innerHTML = document.getElementById("mainResume").innerHTML;
+		document.getElementById("content").innerHTML = document.getElementById("mainResume").innerHTML;
 	else
-		document.getElementById("main").innerHTML = document.getElementById("mainSite").innerHTML;
+		document.getElementById("content").innerHTML = document.getElementById("mainSite").innerHTML;
 }
 
 function RedirecToLink(){
