@@ -1,6 +1,4 @@
-.max-height {
-    height: 100vh;
-}
+
 
 .icon-color {
     color: #FF1C4C !important;
@@ -9,6 +7,11 @@
 .nav-color {
     background-color: #FF1C4C !important;
 }
+
+.pointer-enabled {
+    cursor: pointer;
+}
+
 .menu-padding {
     padding-top: 50px !important;
     padding-right: 20px !important;
@@ -22,10 +25,12 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
     color: rgb(58, 58, 58);
+    min-height: 830px !important;
 }
 
 .side-style {
     background-color: #3D3D4B;
+    min-height: 835px !important;
 }
 
 .image-perfil {
@@ -61,6 +66,7 @@ ul li a:hover {
 
 #content {
     max-height: 100vh !important;
+    min-height: 835px !important;
     overflow: scroll;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -100,6 +106,10 @@ ul li a:hover {
 .no-padding {
     padding: 0px !important;
     word-wrap: break-word;
+}
+
+.no-margin {
+    margin: 0px !important;
 }
 
 .on-left-padding {

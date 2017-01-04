@@ -22,9 +22,9 @@
 			</div>
 		</nav>
 		<div id="page-body">
-			<div class="row">
+			<div class="row no-margin">
 				<div class="col s4 m4 l4 menu-padding max-height side-style hide-on-small-only">
-					<div class="row center">
+					<div class="row center no-margin">
 						<div class="col s12 m12 l12">
 							<img class="image-perfil circle responsive-img" src="./imgs/photo.png" title="Hello :)" width="256px" height="256px">
 						</div>
@@ -55,12 +55,13 @@
 							</ul>
 						</div>
 						<div class="col s12 m12 l12 center">
-							<p class="white-text"><small><b>@ 2017 Rafael Nunes</b>. I guess some rights are reserved.</small><p>
+							<br>
+							<p class="white-text"><small><b>@ 2017 Rafael Nunes</b>. I guess some rights are reserved.</small></p>
 						</div>
 					</div>
 				</div>
 				<div class="content-style">
-					<div class="row">
+					<div class="row no-margin">
 						<div class="white max-height" id="content">
 							<div class="no-padding col s12 m12 l12">
 								<h2 class="">Rafael Nunes</h2>
@@ -68,9 +69,44 @@
 								</div>
 							</div>
 							<div id="dynamic" class="no-padding col s12 m12 l12">
-								<h4>Hello mate, come closer =]</h4>
-								<h5 class="light">I struggle to build a kind fancy website, but I won't give up.</h5>
-								<h6>Actually that's my newest attempt.</h6>
+								<div class="">
+									<h4 class="">Hello mate, come closer =]</h4>
+									<h5 class="light">I struggle to build a kind fancy website, but I won't give up.</h5>
+									<h6 class="light">That's actually my newest attempt.</h6>
+								</div>
+								<br><br><br>
+								<div class="row">
+									<div class="pointer-enabled hoverable col s12 m4 l4" onclick="changeDiv(1);" title="Click to read my resume.">
+										<div class="icon-block">
+											<h2 class="center icon-color"><i class="medium material-icons">person_pin</i></h2>
+											<h5 class="center">Resume</h5>
+											<p class="light center">Overview about my background.</p>
+										</div>
+									</div>
+
+									<div class="pointer-enabled hoverable col s12 m4 l4" onclick="changeDiv(2)" title="Click to read my posts.">
+										<div class="icon-block">
+												<h2 class="center icon-color"><i class="medium material-icons">chat</i></h2>
+												<h5 class="center">Blog</h5>
+												<p class="light center">My attempts to write about something.</p>
+										</div>
+									</div>
+
+									<div class="pointer-enabled hoverable col s12 m4 l4" onclick="changeDiv(3)" title="Click to see my projects.">
+										<div class="icon-block">
+											<h2 class="center icon-color"><i class="medium material-icons">new_releases</i></h2>
+											<h5 class="center">Projects</h5>
+											<p class="light center">Some independent and coursework projects.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<h4>News</h4>
+								<ul id="news-lit">
+									<li><u>04/01/2017</u> - New homepage version is online!</li>
+									<li><u>20/12/2016</u> - SwiftCity project is online <a href="http://swiftcity.github.io/website" target="_blank">here</a>!</li>
+								</ul>
 							</div>
 							<br>
 							<br>
