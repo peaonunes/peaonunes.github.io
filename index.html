@@ -23,8 +23,8 @@
 		</nav>
 		<div id="page-body">
 			<div class="row no-margin">
-				<div class="col s4 m4 l4 menu-padding max-height side-style hide-on-small-only">
-					<div class="row center no-margin">
+				<div class="col s3 m3 l3 menu-style hide-on-small-only center">
+					<div class="row">
 						<div class="col s12 m12 l12">
 							<img class="image-perfil circle responsive-img" src="./imgs/photo.png" title="Hello :)" width="256px" height="256px">
 						</div>
@@ -55,45 +55,42 @@
 								<li><a href="#" onclick="changeDiv(3)">projects</a></li>
 							</ul>
 						</div>
-						<div class="col s12 m12 l12 center">
+						<div class="col s12 m12 l12 div--position--bottom">
 							<br>
 							<p class="white-text"><small><b>@ 2017 Rafael Nunes</b>. I guess some rights are reserved.</small></p>
 						</div>
 					</div>
 				</div>
-				<div class="content-style">
+				<div class="col s12 m9 l9 content-style">
 					<div class="row no-margin">
-						<div class="white max-height" id="content">
-							<div class="no-padding col s12 m12 l12">
-								<h2 class="">Rafael Nunes</h2>
+						<div class="white" id="content">
+							<div class="no-padding row">
+								<h3 class="">Rafael Nunes</h3>
 								<div class="divider">
 								</div>
 							</div>
-							<div id="dynamic" class="no-padding col s12 m12 l12">
-								<div class="">
-									<h4 class="">Hello mate, come closer =]</h4>
-									<h5 class="light">I struggle to build a kind fancy website, but I won't give up.</h5>
-									<h6 class="light">That's actually my newest attempt.</h6>
+							<div class="row">
+								<div class="row">
+									<h5>Welcome mate</h5>
+									<h6 class="light">I struggle to build a kind fancy website, but I won't give up.</h6>
 								</div>
 								<br><br><br>
 								<div class="row">
-									<div class="pointer-enabled hoverable col s12 m4 l4" onclick="changeDiv(1);" title="Click to read my resume.">
+									<div class="pointer-enabled col s12 m4 l4" onclick="changeDiv(1);" title="Click to read my resume.">
 										<div class="icon-block">
 											<h2 class="center icon-color"><i class="medium material-icons">person_pin</i></h2>
 											<h5 class="center">Resume</h5>
 											<p class="light center">Overview about my background.</p>
 										</div>
 									</div>
-
-									<div class="pointer-enabled hoverable col s12 m4 l4" onclick="changeDiv(2)" title="Click to read my posts.">
+									<div class="pointer-enabled col s12 m4 l4" onclick="changeDiv(2)" title="Click to read my posts.">
 										<div class="icon-block">
 												<h2 class="center icon-color"><i class="medium material-icons">chat</i></h2>
 												<h5 class="center">Blog</h5>
-												<p class="light center">My attempts to write about something.</p>
+												<p class="light center">Checkout my latest posts!</p>
 										</div>
 									</div>
-
-									<div class="pointer-enabled hoverable col s12 m4 l4" onclick="changeDiv(3)" title="Click to see my projects.">
+									<div class="pointer-enabled col s12 m4 l4" onclick="changeDiv(3)" title="Click to see my projects.">
 										<div class="icon-block">
 											<h2 class="center icon-color"><i class="medium material-icons">new_releases</i></h2>
 											<h5 class="center">Projects</h5>
@@ -101,14 +98,16 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<h4>News</h4>
-								<ul id="news-lit">
-									<li><u>08/03/2017</u> - Started work at <a href="https://www.inlocomedia.com" target="_blank">In Loco</a>!</li>
-									<li><u>04/01/2017</u> - New homepage version is online!</li>
-									<li><u>20/12/2016</u> - SwiftCity project is online <a href="http://swiftcity.github.io/" target="_blank">here</a>!</li>
-								</ul>
+								<br><br><br>
+								<div class="row">
+									<h5>News</h5>
+									<ul>
+										<li>25/05/2017 - SwiftCity was presented at <a href="http://icse2017.gatech.edu/" target="_blank">ICSE 2017</a>! Check out the <a href="http://peaonunes.github.io/files/POSTER-SWIFTCITY.pdf" target="_blank">poster</a> and the <a href="http://peaonunes.github.io/files/ABSTRACT-PAPER.pdf" target="_blank">abstract paper!</a></li>
+										<li>08/03/2017 - Started work at <a href="https://www.inlocomedia.com" target="_blank">In Loco</a>!</li>
+										<li>04/01/2017 - New homepage version is online!</li>
+										<li>20/12/2016 - SwiftCity project is online <a href="http://swiftcity.github.io/" target="_blank">here</a>!</li>
+									</ul>
+								</div>
 							</div>
 							<br>
 							<br>
@@ -137,7 +136,7 @@
 
 <div class="container" style="display: none;" id="mainResume">
 	<div class="no-padding col s12 m12 l12">
-		<h2 class="">Rafael Nunes</h2>
+		<h3 class="">Rafael Nunes</h3>
 		<div class="divider">
 		</div>
 	</div>
@@ -145,10 +144,10 @@
 		<p>Phone: + 55 81 9 97587600<p>
 		<p>Click <a target="_blank" href="http://peaonunes.github.io/files/resume_en.pdf">here</a> for the resume on pdf format.</p>
 		<div class="row">
-			<div class="no-padding col s2 m2 l2">
+			<div class="no-padding col s12 m2 l2">
 				<h4><i>Education</i></h4>
 			</div>
-			<div class="on-left-padding col s10 m10 l10">
+			<div class="on-left-padding col s12 m10 l10">
 				<p>Jan 2011 - Dec 2016: <b>Center of Informatics (CIn), Federal University of Pernambuco, Recife-PE, Brasil</b>.</p>
 				<blockquote>
 					<p>Bachelor Computer Science, GPA: 83.1/100</p>
@@ -163,10 +162,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="no-padding col s2 m2 l2">
+			<div class="no-padding col s12 m2 l2">
 				<h4><i>Skills</i></h4>
 			</div>
-			<div class="on-left-padding col s10 m10 l10">
+			<div class="on-left-padding col s12 m10 l10">
 				<h5>Programming Skills</h5>
 				<blockquote>
 					<table>
@@ -177,15 +176,18 @@
 						</thead>
 						<tbody>
 							<td class="table-item-padding">
-								<ul>
+								<ul class="table-list-float">
 									<li>Java</li>
 									<li>C#</li>
 									<li>React/Redux</li>
 								</ul>
+								<ul class="table-list-float table-list-padding">
+									<li>ProtoBuff</li>
+									<li>GRPC</li>
+								</ul>
 							</td>
 							<td class="table-item-padding">
 								<ul class="table-list-float">
-									<li>JavaScript</li>
 									<li>Three.js</li>
 									<li>D3.js</li>
 								</ul>
@@ -227,14 +229,14 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="no-padding col s2 m2 l2">
+			<div class="no-padding col s12 m2 l2">
 				<h4><i>Experience</i></h4>
 			</div>
-			<div class="on-left-padding col s10 m10 l10">
+			<div class="on-left-padding col s112 m10 l10">
 				<p><b><a href="https://www.inlocomedia.com" target="_blank">In Loco</a>, Recife, Brazil - Software Engineer</b> Mar 2017 - Today</p>
 				<blockquote>
 					<ul>
-						<li>Description will be available soon.</li>
+						<li>Soon...</li>
 					</ul>
 				</blockquote>
 
@@ -265,10 +267,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="no-padding col s2 m2 l2">
+			<div class="no-padding col s12 m2 l2">
 				<h4><i>Teaching</i></h4>
 			</div>
-			<div class="on-left-padding col s10 m10 l10">
+			<div class="on-left-padding col s12 m10 l10">
 				<p><b>Volunteering Teaching Assistant at CIn, Federal University of Pernambuco:</b></p>
 				<blockquote>
 					<ul>
@@ -296,10 +298,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="no-padding col s2 m2 l2">
+			<div class="no-padding col s12 m2 l2">
 				<h4><i>Honours</i></h4>
 			</div>
-			<div class="on-left-padding col s10 m10 l10">
+			<div class="on-left-padding col s12 m10 l10">
 				<b>Honours, Mentions &amp; Awards</b>
 				<blockquote>
 					<ul>
@@ -309,10 +311,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="no-padding col s2 m2 l2">
-				<h4><i>Independent Coursework</i></h4>
+			<div class="no-padding col s12 m2 l2">
+				<h4><i>Independent Courses</i></h4>
 			</div>
-			<div class="on-left-padding col s10 m10 l10">
+			<div class="on-left-padding col s12 m10 l10">
 				<blockquote>
 					<ul>
 						<li><a target="_blank" href="http://ude.my/UC-Z0G9LV59">Apache Kafka Series - Learning Apache Kafka for Beginners</a> by Stephane Maarek on Udemy</li>
@@ -327,10 +329,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="no-padding col s2 m2 l2">
+			<div class="no-padding col s12 m2 l2">
 				<h4><i>Personal Interests</i></h4>
 			</div>
-			<div class="on-left-padding col s10 m10 l10">
+			<div class="on-left-padding col s12 m10 l10">
 				<blockquote>
 					<ul>
 						<li>Sport Club of Recife supporter!</li>
@@ -344,199 +346,113 @@
 	</div>
 </div>
 
-<div class="container" style="display: none;" id="mainBlog">
-	<div class="no-padding col s12 m12 l12">
-		<h2 class="">Rafael Nunes</h2>
-		<div class="divider">
-		</div>
-	</div>
-	<div class="no-padding col s12 m12 l12">
-		<script async src="https://static.medium.com/embed.js"></script>
-		<a target="_blank" class="m-profile" data-width="100%" data-collapsed="false" href="https://medium.com/@peaonunes">Rafael Nunes</a>
-	</div>
-</div>
-
 <div class="container" style="display: none;" id="mainProjects">
 	<div class="no-padding col s12 m12 l12">
-		<h2 class="">Rafael Nunes</h2>
+		<h3 class="">Rafael Nunes</h3>
 		<div class="divider">
 		</div>
 	</div>
 
 	<div class="no-padding col s12 m12 l12">
-		<h5>Some cool independent and coursework projects that I've done.</h5>
-		<p>*Some could only have a portuguese description.</p>
+		<h5>Some independent and coursework projects</h5>
+		<p>*Some might only have a portuguese description.</p>
 
 		<div class="no-padding row">
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/alamofire.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">SwiftCity<i class="material-icons right">more_vert</i></span>
-						<p>Visualize Software Systems written in Swift as cities!</p>
-						<a target="_blank" href="https://swiftcity.github.io/">Website</a> |
-						<a target="_blank" href="https://github.com/swiftcity">GitHub</a> |
-						<a target="_blank" href="./files/tg-rngs.pdf">Document</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title grey-text text-darken-4">SwiftCity<i class="material-icons right">close</i></span>
-						<p>Visualizating Swift Systems as cities. Graduation project under the tutorship of Professor <a href="https://sites.google.com/a/cin.ufpe.br/castor/" target="_blank">Fernando Castor</a>.</p>
-						<a target="_blank" href="https://swiftcity.github.io/">Website</a> |
-						<a target="_blank" href="https://swiftcity.github.io/swiftcity-app">Web app</a> |
-						<a target="_blank" href="https://github.com/swiftcity">GitHub</a> |
-						<a target="_blank" href="./files/tg-rngs.pdf">Document</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/alamofire.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>SwiftCity</h5>
+					<p>Visualizating Swift Systems as cities. Graduation project under the tutorship of Professor <a href="https://sites.google.com/a/cin.ufpe.br/castor/" target="_blank">Fernando Castor</a>.</p>
+					<a target="_blank" href="https://swiftcity.github.io/">Website</a> |
+					<a target="_blank" href="https://github.com/swiftcity">GitHub</a> |
+					<a target="_blank" href="./files/tg-rngs.pdf">Document</a> |
+					<a target="_blank" href="http://peaonunes.github.io/files/POSTER-SWIFTCITY.pdf">Poster</a> |
+					<a target="_blank" href="http://peaonunes.github.io/files/ABSTRACT-PAPER.pdf">Paper</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/cinquest.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">CInQuest<i class="material-icons right">more_vert</i></span>
-						<p>PET-Informática's playable guide to freshers students of CIn.</p>
-						<a target="_blank" href="https://pet-informatica.github.io/cinquest">Website</a> |
-						<a target="_blank" href="https://github.com/pet-informatica/CinQuest">GitHub</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title activator grey-text text-darken-4">CInQuest<i class="material-icons right">close</i></span>
-						<p>PET-Informática project, RPG Game based on Unity to help freshers deal with their firsts challenges in department.</p>
-						<a target="_blank" href="https://pet-informatica.github.io/cinquest">Website</a> |
-						<a target="_blank" href="https://github.com/pet-informatica/CinQuest">GitHub</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/cinquest.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>CInQuest</h5>
+					<p>PET-Informática project, RPG Game based on Unity to help freshers deal with their firsts challenges in department.</p>
+					<a target="_blank" href="https://pet-informatica.github.io/cinquest">Website</a> |
+					<a target="_blank" href="https://github.com/pet-informatica/CinQuest">GitHub</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/data-visualization.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Data Visualization<i class="material-icons right">more_vert</i></span>
-						<p><a target="_blank" href="http://www.cin.ufpe.br/~nivan/teaching/data_vis/fall_2016/website/">Data Visualization</a> course projects.</p>
-						<a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents</a> |
-						<a target="_blank" href="https://peaonunes.github.io/edurec-vis-visualizacao-2016-2/">Recife's Municipal education</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title activator grey-text text-darken-4">Data Visualization<i class="material-icons right">close</i></span>
-						<p>Assigment made in D3.js about <a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents (Recife)</a></p>
-						<p>Final project about Recife's Education, online at <a target="_blank" href="http://peaonunes.github.io/dv/acidentes">GitHubPages</a> and repository on <a target="_blank" href="https://github.com/peaonunes/edurec-vis-visualizacao-2016-2">GitHub</a>. Made with D3, Webpack and Redux.</p>
-						<a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents</a> |
-						<a target="_blank" href="https://peaonunes.github.io/edurec-vis-visualizacao-2016-2/">Recife's Municipal education</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/data-visualization.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>Data Visualization</h5>
+					<p>Assigment made in D3.js about <a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents (Recife)</a></p>
+					<p>Final project about Recife's Education, online at <a target="_blank" href="http://peaonunes.github.io/dv/acidentes">GitHubPages</a> and repository on <a target="_blank" href="https://github.com/peaonunes/edurec-vis-visualizacao-2016-2">GitHub</a>. Made with D3, Webpack and Redux.</p>
+					<a target="_blank" href="http://peaonunes.github.io/dv/acidentes">Traffic Accidents</a> |
+					<a target="_blank" href="https://peaonunes.github.io/edurec-vis-visualizacao-2016-2/">Recife's Municipal education</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/colorMatches.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">ColorMatches!<i class="material-icons right">more_vert</i></span>
-						<p>Swift basic game made for coursera assignment.</p>
-						<a target="_blank" href="https://github.com/peaonunes/ColorMatches">GitHub</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title activator grey-text text-darken-4">ColorMatches!<i class="material-icons right">close</i></span>
-						<p>Simple game made as an assignment for <a target="_blank" href="https://www.coursera.org/learn/multiplas-telas-iphone/">Como criar aplicativos com múltiplas telas para iPhone e iPad</a> by Universidade Estadual de Campinas (Coursera).</p>
-						<a target="_blank" href="https://github.com/peaonunes/ColorMatches">GitHub</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/colorMatches.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>ColorMatches</h5>
+					<p>Swift basic game made. Simple game made as an assignment for <a target="_blank" href="https://www.coursera.org/learn/multiplas-telas-iphone/">Como criar aplicativos com múltiplas telas para iPhone e iPad</a> by Universidade Estadual de Campinas (Coursera).</p>
+					<a target="_blank" href="https://github.com/peaonunes/ColorMatches">GitHub</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/costumer.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title grey-text text-darken-4">Complaints Mining<i class="material-icons right">more_vert</i></span>
-						<p>Data Mining Approach for Evaluating the Solution of Costumer Complaints.</p>
-						<a target="_blank" href="http://bit.ly/DataManing-CostumersComplaints">Article</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title activator grey-text text-darken-4">Complaints Mining<i class="material-icons right">close</i></span>
-						<p>A Data Mining Approach for Evaluating the Solution of Costumer Complaints (not published), main project of <a href="http://www.cin.ufpe.br/~compint/aulas-IAS/kdd-122/" target="_blank">IF795, Decision an Data Mining Support Systems</a>.</p>
-						<a target="_blank" href="http://bit.ly/DataManing-CostumersComplaints">Article</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/costumer.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>Complaints Mining</h5>
+					<p>A Data Mining Approach for Evaluating the Solution of Costumer Complaints (not published), main project of <a href="http://www.cin.ufpe.br/~compint/aulas-IAS/kdd-122/" target="_blank">IF795, Decision an Data Mining Support Systems</a>.</p>
+					<a target="_blank" href="http://bit.ly/DataManing-CostumersComplaints">Article</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/neural.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title grey-text text-darken-4">NN Project<i class="material-icons right">more_vert</i></span>
-						<p>Try to achieve the best performance for a NN's on breast cancer database.</p>
-						<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">GitHub</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title grey-text text-darken-4">NN Project<i class="material-icons right">close</i></span>
-						<p>Use of a Neural Network focusing on achieve its best performance applied to a breast cancer detection database. Project of <a targe="_blank" href="http://www.cin.ufpe.br/~gcv/web_lci/intro.html">IF702, Neural Networks</a>.</p>
-						<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">GitHub</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/neural.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>Neural Networks Project</h5>
+					<p>Use of a Neural Network focusing on achieve its best performance applied to a breast cancer detection database. Project of <a targe="_blank" href="http://www.cin.ufpe.br/~gcv/web_lci/intro.html">IF702, Neural Networks</a>.</p>
+					<a target="_blank" href="https://github.com/peaonunes/NeuralNetworksProject">GitHub</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/politique.jpg" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title grey-text text-darken-4">Politique?<i class="material-icons right">more_vert</i></span>
-						<p>Software Architecture, design and implementation of a Web Application.</p>
-						<a target="_blank" href="https://github.com/Valbrand/aps-politique-node">GitHub</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title grey-text text-darken-4">Politique?<i class="material-icons right">close</i></span>
-						<p>Software Architecture, design and implementation of a Web Application (NodeJS) as main project of <a target="_black" href="http://www.cin.ufpe.br/~if718/">IF718, Software Analysis and Design</a>.
-						<br><a target="_blank" href="https://github.com/Valbrand/aps-politique-node">GitHub</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/politique.jpg" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>Politique?</h5>
+					<p>Software Architecture, design and implementation of a Web Application (NodeJS) as main project of <a target="_black" href="http://www.cin.ufpe.br/~if718/">IF718, Software Analysis and Design</a>.</p>
+					<a target="_blank" href="https://github.com/Valbrand/aps-politique-node">GitHub</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/quality.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title grey-text text-darken-4">Software Inspection<i class="material-icons right">more_vert</i></span>
-						<p>Software Inspection for QoS, under a Theoretical look and Enterprise usage.</p>
-						<a target="_blank" href="http://bit.ly/InspecaodeSoftware">Article</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title grey-text text-darken-4">Software Inspection<i class="material-icons right">close</i></span>
-						<p>Research (not published) of Software Inspection under a Theoretical look, Enterprise usage and Software Quality. Produced for <a targe="_blank" href="http://www.cin.ufpe.br/~if720/index.htm">IF720, Software Quality</a>.</p>
-						<a target="_blank" href="http://bit.ly/InspecaodeSoftware">Paper</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/quality.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>Software Inspection</h5>
+					<p>Research (not published) of Software Inspection under a Theoretical look, Enterprise usage and Software Quality. Produced for <a targe="_blank" href="http://www.cin.ufpe.br/~if720/index.htm">IF720, Software Quality</a>.</p>
+					<a target="_blank" href="http://bit.ly/InspecaodeSoftware">Paper</a>
 				</div>
 			</div>
-
-			<div class="col s12 m4 l4">
-				<div class="card card-size hoverable">
-					<div class="card-image">
-						<img src="imgs/ipmt.png" class="activator card-image-size">
-					</div>
-					<div class="card-content">
-						<span class="card-title grey-text text-darken-4">IPMT<i class="material-icons right">more_vert</i></span>
-						<p>Index Pattern Matching Tool</p>
-						<a target="_blank" href="https://github.com/peaonunes/impt">GitHub</a>
-					</div>
-					<div class="card-reveal justify-text">
-						<span class="card-title grey-text text-darken-4">IPMT<i class="material-icons right">close</i></span>
-						<p>Implementation of an Index Pattern Matching Tool second project of <a targe="_blank" href="http://www.cin.ufpe.br/~paguso/courses/if767/2015-2/">IF767, PCC</a>.</p>
-						<a target="_blank" href="https://github.com/peaonunes/impt">GitHub</a>
-					</div>
+			<div class="row">
+				<div class="col s12 m12 l4">
+					<img src="imgs/ipmt.png" class="card-image-size">
+				</div>
+				<div class="col s12 m12 l8">
+					<h5>Index Pattern Matching Tool</h5>
+					<p>Implementation of an Index Pattern Matching Tool second project of <a targe="_blank" href="http://www.cin.ufpe.br/~paguso/courses/if767/2015-2/">IF767, PCC</a>.</p>
+					<a target="_blank" href="https://github.com/peaonunes/impt">GitHub</a>
 				</div>
 			</div>
 		</div>
