@@ -8,14 +8,6 @@
   font-size: 30px;
 }
 
-.contact-a:link {
-  text-decoration: none;
-}
-
-.contact-a:visited {
-  text-decoration: none;
-}
-
 .contact-a:hover {
   color: red;
 }

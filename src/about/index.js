@@ -33,9 +33,9 @@ class About extends React.Component {
         {
           contactInfo.map((contactMethod, index) => {
             return (
-              <div className="col s1 m1 l1">
-                <a title={contactMethod.title} href={contactMethod.href} class="contact-a" target="_blank">
-                  <i class={`${contactMethod.icon} contact-icon`} aria-hidden="true"></i>
+              <div className="col s1 m1 l1" key={`${contactMethod.title}_${index}`}>
+                <a title={contactMethod.title} href={contactMethod.href} className="contact-a" target="_blank">
+                  <i className={`${contactMethod.icon} contact-icon`} aria-hidden="true"></i>
                 </a>
               </div>
             )

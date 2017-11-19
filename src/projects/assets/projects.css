@@ -1,0 +1,46 @@
+.projects-section-title {
+  max-width: 305px !important;
+  padding-right: 0px !important;
+}
+
+.projects-limit-wrapper {
+  padding-left: 0px !important;
+}
+
+.projects-limit-input {
+  height: 1em !important;
+  margin: 0px !important;
+  padding-top: 18px !important;
+  width: 25px !important;
+}
+
+.project-img {
+  width: 100px;
+  height: 100px;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-row {
+  margin-top: 30px;
+}
+
+.project-description {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.project-content {
+  padding: 5px !important;
+}
+
+.project-icon {
+  font-size: 15px;
+}
+
+.project-link-wrapper {
+  margin-left: 5px;
+  margin-right: 5px;
+}
