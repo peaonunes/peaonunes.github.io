@@ -3,24 +3,24 @@ import React from 'react'
 class WorkingExperience extends React.Component {
   render() {
     return (
-      <div className="row">
-        <h5 className="light">Working Experience</h5>
+      <div className="row" data-aos="fade-in">
+        <h5 className="light" style={{"fontFamily": "Courier New"}}>> describe experience</h5>
         {
           JOBS.map((job, index) => {
             return (
-              <div className="row job-row">
+              <div key={`${job.company}_${index}`} className="row job-row" data-aos="fade-in">
                 <div className="col l2 m2 center hide-on-small-only show-on-medium-and-up">
-                  <img src={job.img} className="circle job-img" />
+                  <img src={job.img} className="circle job-img" alt={job.company}/>
                 </div>
                 <div className="col s12 left hide-on-med-and-up">
-                  <img src={job.img} className="circle job-img" />
+                  <img src={job.img} className="circle job-img" alt={job.company}/>
                 </div>
-                <div className="col s12 l10 m10">
+                <div className="col s12 l10 m10 job-content">
                   {job.position} @ 
                   <a target="_blank" href={job.href}>
                     <span className="light job-title"> {job.company}</span>
                   </a>
-                  <p>
+                  <p className="job-date">
                     {job.date}
                   </p>
                   {

@@ -1,0 +1,21 @@
+.personal-img {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+}
+
+.contact-icon {
+  font-size: 30px;
+}
+
+.contact-a:link {
+  text-decoration: none;
+}
+
+.contact-a:visited {
+  text-decoration: none;
+}
+
+.contact-a:hover {
+  color: red;
+}
