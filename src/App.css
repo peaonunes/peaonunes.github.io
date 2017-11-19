@@ -7,25 +7,3 @@ header, main, footer {
     padding-left: 0;
   }
 }
-
-.job-img {
-  width: 100px;
-  height: 100px;
-}
-
-.job-title {
-  font-weight: bold;
-}
-
-.job-row {
-  margin-top: 30px;
-}
-
-.job-date {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.job-content {
-  padding: 5px !important;
-}

@@ -1,3 +1,4 @@
+import './working.css'
 import React from 'react'
 
 class WorkingExperience extends React.Component {
@@ -23,16 +24,24 @@ class WorkingExperience extends React.Component {
                   <p className="job-date">
                     {job.date}
                   </p>
-                  {
-                    job.skills.map((skillName, index) => {
-                      return (
-                        <div key={`${skillName}_${index}`} className="chip">
-                          {skillName}
-                        </div>
-                      )
-                    })
-                  }
+                  {this.renderSkills(job)}
                 </div>
+              </div>
+            )
+          })
+        }
+      </div>
+    )
+  }
+
+  renderSkills(job) {
+    return (
+      <div>
+        {
+          job.skills.map((skillName, index) => {
+            return (
+              <div key={`${skillName}_${index}`} className="chip">
+                {skillName}
               </div>
             )
           })
