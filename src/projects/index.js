@@ -5,16 +5,21 @@ import swiftcity from './assets/swiftcity.png'
 import cinquest from './assets/cinquest.png'
 import './assets/projects.css'
 import React from 'react'
+import AOS from 'aos'
 
 class Projects extends React.Component {
   constructor(props){
     super(props)
 
     this.state = {
-      limit: 5
+      limit: 4
     }
 
     this.handleChangeLimit = this.handleChangeLimit.bind(this)
+  }
+
+  componentWillMount() {
+    AOS.refreshHard()
   }
 
   render() {
@@ -22,7 +27,7 @@ class Projects extends React.Component {
 
     return (
       <div className="row">
-        <div className="row" style={{"fontFamily": "Courier New"}}>
+        <div className="row courier-new">
           <div className="col s10 m10 l4 projects-section-title">
             <h5 className="light">> show projects -n=</h5>
           </div>
@@ -33,7 +38,7 @@ class Projects extends React.Component {
         {
           PROJECTS.slice(ARRAY_FIRST_POSITION, this.state.limit).map((project, index) => {
             return (
-              <div key={`${project.name}_${index}`} className="row project-row" data-aos="fade-in">
+              <div key={`${project.name}_${index}`} className="row project-row" data-aos="fade-up">
                 {this.renderImage(project)}
                 <div className="col s12 l10 m10 project-content">
                   {this.renderContent(project)}
@@ -106,7 +111,7 @@ class Projects extends React.Component {
 
   handleChangeLimit(event) {
     event.preventDefault()
-    if (event.target.value !== 0) {
+    if (event.target.value >= 4) {
       this.setState({
         limit: event.target.value
       })
@@ -184,6 +189,13 @@ const PROJECTS = [
     img: "http://peaonunes.github.io/imgs/costumer.png",
     date: "2015",
     skills: ["KNIME", "Python", "Data Mining"]
+  },
+  {
+    name: "Stig Startup",
+    description: "Led project management and developing Client/Server iOS Application, running Lean Startup methodology.",
+    img: "https://scontent.frec3-2.fna.fbcdn.net/v/t1.0-1/p200x200/1234371_202650289913726_2141085768_n.png?oh=5ccf850b6b37a54ea3016b201c8abcf8&oe=5A8E3DDD",
+    date: "2014-2015",
+    skills: ["Objective-C", "Node"]
   }
 ]
 
