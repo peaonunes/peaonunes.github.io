@@ -11,3 +11,7 @@ header, main, footer {
 .courier-new {
   font-family: "Courier New";
 }
+
+a:hover {
+  color: red;
+}

@@ -1,6 +1,7 @@
 import '../node_modules/aos/dist/aos.css' 
 import React, { Component } from 'react'
 import WorkExperience from './working'
+import Education from './education'
 import Projects from './projects'
 import Teaching from './teaching'
 import About from './about'
@@ -19,6 +20,7 @@ class App extends Component {
         <WorkExperience />
         <Projects />
         <Teaching />
+        <Education />
       </div>
     )
   }

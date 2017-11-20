@@ -146,7 +146,7 @@ const PROJECTS = [
     website: "https://pet-informatica.github.io/cinquest/",
     repository: "https://github.com/pet-informatica/CinQuest",
     img: cinquest,
-    date: "2015-2016",
+    date: "2015 - 2016",
     skills: ["Unity", "C#", "HTML", "CSS"]
   },
   {
