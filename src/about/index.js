@@ -7,7 +7,14 @@ class About extends React.Component {
     return (
       <div className="row">
         <div className="col s12 m2 l2 center">
-          <img src={photo} className="circle personal-img" alt="future-easter-egg" />
+          <img
+            src={photo}
+            className="circle personal-img pointer-cursor tooltipped"
+            alt="future-easter-egg"
+            data-position="left"
+            data-delay="50"
+            data-tooltip="This is the v1.0.0!"
+          />
         </div>
         <div className="col s12 m10 l10">
           <h4 className="light">Hi there, I'm Rafael Nunes.</h4>

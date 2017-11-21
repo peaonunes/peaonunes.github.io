@@ -15,3 +15,7 @@ header, main, footer {
 a:hover {
   color: red;
 }
+
+.pointer-cursor {
+  cursor: pointer;
+}
