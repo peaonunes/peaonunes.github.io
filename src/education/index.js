@@ -8,9 +8,8 @@ class Education extends React.Component {
       <div className="row">
         <h5 className="light courier-new">> list education</h5>
         <div className="education-row">
-          <div className="col s12 m6 l6">
+          <div className="col s12 m6 l6 universities-margin">
             {this.renderUniversities()}
-            {this.renderArticles()}
           </div>
           <div className="col s12 m6 l6">
             {this.renderOthers()}
@@ -36,8 +35,8 @@ class Education extends React.Component {
                   </div>
                   <div className="col s12 l10 m10">
                     <ul>
+                      <li><b>{university.degree}</b></li>
                       <li>{university.name}</li>
-                      <li>{university.degree}</li>
                       <li><span className="education-date">{university.date}</span></li>
                     </ul>
                   </div>
@@ -53,6 +52,7 @@ class Education extends React.Component {
   renderOthers() {
     return (
       <div className="row list-row">
+        {this.renderArticles()}
         {this.renderCertificates()}
       </div>
     )
@@ -61,7 +61,12 @@ class Education extends React.Component {
   renderArticles() {
     return (
       <div className="col s12 m12 l12" data-aos="fade-up">
-        <span><i className="fa fa-search education-icon education-link-wrapper" aria-hidden="true"></i>Articles</span>
+        <b>
+          <span>
+            <i className="fa fa-search education-icon education-link-wrapper" aria-hidden="true"></i>
+            Articles
+          </span>
+        </b>
         {
           ARTICLES.map((article, index) => {
             return (
@@ -98,7 +103,12 @@ class Education extends React.Component {
   renderCertificates() {
     return (
       <div className="col s12 m12 l12" data-aos="fade-up">
-        <span><i className="fa fa-certificate education-icon education-link-wrapper" aria-hidden="true"></i>Certifications</span>
+        <span>
+          <b>
+            <i className="fa fa-certificate education-icon education-link-wrapper" aria-hidden="true"></i>
+            Certifications
+          </b>
+        </span>
         {
           CERTIFICATES.map((certificate, index) => {
             return (

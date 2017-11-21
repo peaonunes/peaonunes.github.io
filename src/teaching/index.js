@@ -38,7 +38,7 @@ class Teaching extends React.Component {
   renderImporting() {
     return (
       <div className="courier-new">
-        <span>> downloading {this.state.counter}/1000 packages...</span><br/>
+        <span>$ downloading {this.state.counter}/1000 packages...</span><br/>
         {this.state.loadingBar}
       </div>
     )
@@ -86,7 +86,7 @@ class Teaching extends React.Component {
   renderContent(teaching) {
     return (
       <div>
-        {teaching.role} @ {teaching.where}
+        <b>{teaching.role} @ {teaching.where}</b>
         <br/>
         {this.renderTopics(teaching)}
       </div>
@@ -141,11 +141,11 @@ const TEACHING = [
     topics: [
       {
         date: "2013, 2015, 2016",
-        name: "M. Office and Internet for UFPE staff and people from neighboring communities."
+        name: "Office and Internet to UFPE staff and community people."
       },
       {
         date: "Jan 2016",
-        name: "Introducing CS and Python for High School students."
+        name: "Intro to CS + Python to High School students."
       }
     ]
   },

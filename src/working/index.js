@@ -23,7 +23,7 @@ class WorkingExperience extends React.Component {
               <img src={job.img} className="circle job-img" alt={job.company}/>
             </div>
             <div className="col s12 l10 m10 job-content">
-              {job.position} @ 
+              <b>{job.position}</b> @ 
               <a target="_blank" href={job.href}>
                 <span className="light job-title"> {job.company}</span>
               </a>

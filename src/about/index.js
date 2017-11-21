@@ -15,11 +15,11 @@ class About extends React.Component {
         <div className="col s12 m10 l10">
           <h4 className="light">Hi there, I'm Rafael Nunes.</h4>
           <p>
-            I'm currently working as Software Engineer @ In Loco.
-          </p>
-          <p>
-            I'm always looking forward to build and to work on projects that makes the difference!
-            I love Innovation and I try to play around with web apps, data science, software engeneering (...) and sometimes I even take risk on writing.
+            Looking forward to build and to work on projects that makes the difference!
+            <br/>
+            I love innovating and playing around with webapps, data science, visualization, software engeneering...
+            <br/>
+            And sometimes I even take risk on writing.
           </p>
           {this.renderContactInfo()}
         </div>

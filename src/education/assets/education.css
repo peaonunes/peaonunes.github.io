@@ -19,9 +19,14 @@
 
 .education-icon {
   font-size: 15px;
+  opacity: 0.8;
 }
 
 .education-link-wrapper {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.universities-margin {
+  margin-top: 50px;
 }
