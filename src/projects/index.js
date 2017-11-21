@@ -69,7 +69,7 @@ class Projects extends React.Component {
     return (
       <div>
         <p className="project-description">
-          {project.name}, {project.date} • 
+          {project.name}, <span className="project-date">{project.date}</span> • 
           {this.renderProjectLink(project.website, "Website", "fa fa-link")}
           {this.renderProjectLink(project.repository, "Github", "fa fa-github")}
           {this.renderProjectLink(project.paper, "Paper", "fa fa-file-text")}
