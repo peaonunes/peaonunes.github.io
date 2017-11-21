@@ -30,11 +30,11 @@ class About extends React.Component {
         {
           CONTACTS.map((contactMethod, index) => {
             return (
-              <div>
-                <div className="col m1 l1 hide-on-small-only show-on-medium-and-up" key={`${contactMethod.title}_${index}`}>
+              <div key={`${contactMethod.title}_${index}`}>
+                <div className="col m1 l1 hide-on-small-only show-on-medium-and-up">
                   {this.renderContactMethod(contactMethod)}
                 </div>
-                <div className="col s3 hide-on-med-and-up" key={`${contactMethod.title}_${index}`}>
+                <div className="col s3 hide-on-med-and-up">
                   {this.renderContactMethod(contactMethod)}
                 </div>
               </div>

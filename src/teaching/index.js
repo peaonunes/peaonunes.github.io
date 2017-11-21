@@ -29,7 +29,6 @@ class Teaching extends React.Component {
   }
 
   startImporting() {
-    console.log("focus")
     if (this.timer == null) {
       this.timer = setInterval(() => this.tick(), 10)
     }
@@ -62,11 +61,9 @@ class Teaching extends React.Component {
         {
           TEACHING.map((teaching, index) => {
             return (
-              <div key={`${teaching.name}_${index}`} className="col s12 m4 l4">
-                <div className="row teaching-row" data-aos="fade-up">
-                  {this.renderImage(teaching)}
-                  {this.renderContent(teaching)}
-                </div>
+              <div key={`${teaching.name}_${index}`} className="col s12 m4 l4 teaching-row " data-aos="fade-up">
+                {this.renderImage(teaching)}
+                {this.renderContent(teaching)}
               </div>
             )
           })
@@ -113,7 +110,7 @@ class Teaching extends React.Component {
 const TEACHING = [
   {
     where: "CIn, UFPE",
-    role: "Volunteering Teaching Assistant",
+    role: "Volunteering Teacher Assistant",
     img: ufpe,
     topics: [
       {
@@ -136,7 +133,7 @@ const TEACHING = [
   },
   {
     where: "PET-Informática, UFPE",
-    role: "Volunteering Teacher",
+    role: "Volunteer Teacher",
     img: "https://res.cloudinary.com/dkbuneg9h/image/upload/v1477079274/pet/pet_wn9jqn.png",
     topics: [
       {
@@ -145,12 +142,12 @@ const TEACHING = [
       },
       {
         date: "Jan 2016",
-        name: "Intro to CS + Python to High School students."
+        name: "Intro to CS + Python to HS students."
       }
     ]
   },
   {
-    where: "Boa Viagem High School",
+    where: "Boa Viagem HS",
     role: "Teaching Assistant",
     img: "https://pbs.twimg.com/profile_images/587398326376599552/iJexScMH.jpg",
     topics: [
