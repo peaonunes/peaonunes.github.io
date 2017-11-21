@@ -17,7 +17,7 @@ class Teaching extends React.Component {
 
   render() {
     return (
-      <div className="row" onMouseEnter={() => this.startImporting()}>
+      <div className="row" onTouchStart={() => this.startImporting()} onMouseEnter={() => this.startImporting()}>
         <h5 className="light courier-new">> import teaching</h5>
         {
           this.state.finishedImporting

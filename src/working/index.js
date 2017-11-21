@@ -16,25 +16,42 @@ class WorkingExperience extends React.Component {
       JOBS.map((job, index) => {
         return (
           <div key={`${job.company}_${index}`} className="row job-row">
-            <div className="col l2 m2 center hide-on-small-only show-on-medium-and-up">
-              <img src={job.img} className="circle job-img" alt={job.company}/>
-            </div>
-            <div className="col s12 left hide-on-med-and-up">
-              <img src={job.img} className="circle job-img" alt={job.company}/>
-            </div>
+            {this.renderImage(job)}
             <div className="col s12 l10 m10 job-content">
-              <b>{job.position}</b> @ 
-              <a target="_blank" href={job.href}>
-                <span className="light job-title"> {job.company}</span>
-              </a>
-              <p className="job-date">
-                {job.date}
-              </p>
-              {this.renderSkills(job)}
+              <div className="center hide-on-med-and-up">
+                {this.renderContent(job)}
+                {this.renderSkills(job)}
+              </div>
+              <div className="hide-on-small-only show-on-medium-and-up">
+                {this.renderContent(job)}
+                {this.renderSkills(job)}
+              </div>
             </div>
           </div>
         )
       })
+    )
+  }
+
+  renderImage(job) {
+    return (
+      <div className="col s12 l2 m2 center">
+        <img src={job.img} className="circle job-img" alt={job.company}/>
+      </div>
+    )
+  }
+
+  renderContent(job) {
+    return (
+      <div>
+        <b>{job.position}</b> @ 
+        <a target="_blank" href={job.href}>
+          <span className="light job-title"> {job.company}</span>
+        </a>
+        <p className="job-date">
+          {job.date}
+        </p>
+      </div>
     )
   }
 

@@ -21,12 +21,12 @@ class Education extends React.Component {
 
   renderUniversities() {
     return (
-      <div className="row list-row">
+      <div className="row">
         {
           UNIVERSITIES.map((university, index) => {
             return (
               <div className="col s12 m12 l12" data-aos="fade-up" key={`${university.name}_${index}`}>
-                <div className="row list-row">
+                <div className="row">
                   <div className="col l2 m2 left hide-on-small-only show-on-medium-and-up">
                     <img src={university.img} className="circle education-img" alt={university.name}/>
                   </div>
@@ -51,7 +51,7 @@ class Education extends React.Component {
 
   renderOthers() {
     return (
-      <div className="row list-row">
+      <div className="row">
         {this.renderArticles()}
         {this.renderCertificates()}
       </div>
@@ -60,7 +60,7 @@ class Education extends React.Component {
 
   renderArticles() {
     return (
-      <div className="col s12 m12 l12" data-aos="fade-up">
+      <div className="col s12 m12 l12 list-row" data-aos="fade-up">
         <b>
           <span>
             <i className="fa fa-search education-icon education-link-wrapper" aria-hidden="true"></i>

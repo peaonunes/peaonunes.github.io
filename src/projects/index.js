@@ -40,7 +40,11 @@ class Projects extends React.Component {
             return (
               <div key={`${project.name}_${index}`} className="row project-row" data-aos="fade-up">
                 {this.renderImage(project)}
-                <div className="col s12 l10 m10 project-content">
+                <div className="col s12 center hide-on-med-and-up project-content">
+                  {this.renderContent(project)}
+                  {this.renderSkills(project)}
+                </div>
+                <div className="col l10 m10 hide-on-small-only show-on-medium-and-up project-content">
                   {this.renderContent(project)}
                   {this.renderSkills(project)}
                 </div>
@@ -54,30 +58,23 @@ class Projects extends React.Component {
 
   renderImage(project) {
     return (
-      <div>
-        <div className="col l2 m2 center hide-on-small-only show-on-medium-and-up">
-          <img src={project.img} className="circle project-img" alt={project.company}/>
-        </div>
-        <div className="col s12 left hide-on-med-and-up">
-          <img src={project.img} className="circle project-img" alt={project.company}/>
-        </div>
+      <div className="col s12 l2 m2 center">
+        <img src={project.img} className="circle project-img" alt={project.company}/>
       </div>
     )
   }
 
   renderContent(project) {
     return (
-      <div>
-        <p className="project-description">
-          <b>{project.name}</b>, <span className="project-date">{project.date}</span> • 
-          {this.renderProjectLink(project.website, "Website", "fa fa-link")}
-          {this.renderProjectLink(project.repository, "Github", "fa fa-github")}
-          {this.renderProjectLink(project.paper, "Paper", "fa fa-file-text")}
-          {this.renderProjectLink(project.poster, "Poster", "fa fa-file-image-o")}
-          <br/>
-          {project.description}
-        </p>
-      </div>
+      <p className="project-description">
+        <b>{project.name}</b>, <span className="project-date">{project.date}</span> • 
+        {this.renderProjectLink(project.website, "Website", "fa fa-link")}
+        {this.renderProjectLink(project.repository, "Github", "fa fa-github")}
+        {this.renderProjectLink(project.paper, "Paper", "fa fa-file-text")}
+        {this.renderProjectLink(project.poster, "Poster", "fa fa-file-image-o")}
+        <br/>
+        {project.description}
+      </p>
     )
   }
 
