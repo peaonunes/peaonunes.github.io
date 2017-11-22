@@ -4,6 +4,7 @@ import WorkExperience from './working'
 import Education from './education'
 import Projects from './projects'
 import Teaching from './teaching'
+import Footer from './footer'
 import About from './about'
 import AOS from 'aos'
 import './App.css'
@@ -21,6 +22,7 @@ class App extends Component {
         <Projects />
         <Teaching />
         <Education />
+        <Footer />
       </div>
     )
   }
