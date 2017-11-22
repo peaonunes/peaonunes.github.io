@@ -54,7 +54,7 @@ class About extends React.Component {
 
   renderContactMethod(contactMethod) {
     return (
-      <a title={contactMethod.title} href={contactMethod.href} className="contact-a" target="_blank">
+      <a title={contactMethod.title} href={contactMethod.href} className="contact-a" target="_blank" rel="noopener noreferrer">
         <i className={`${contactMethod.icon} contact-icon`} aria-hidden="true"></i>
       </a>
     )
