@@ -1,8 +1,12 @@
 import cusparallesets from './assets/customizable-prallel-sets.gif'
 import dadosabertosrecife from './assets/dadosabertosrecife.png'
 import colormatches from './assets/colormatches.gif'
+import inspection from './assets/inspection.jpg'
+import datamining from './assets/datamining.jpg'
 import swiftcity from './assets/swiftcity.png'
 import cinquest from './assets/cinquest.png'
+import neural from './assets/neural.png'
+
 import './assets/projects.css'
 import React from 'react'
 import AOS from 'aos'
@@ -12,19 +16,17 @@ class Projects extends React.Component {
     super(props)
 
     this.state = {
-      limit: 4
+      projectsNumber: LIMIT_FLOOR
     }
 
     this.handleChangeLimit = this.handleChangeLimit.bind(this)
   }
 
-  componentWillMount() {
+  componentWillUpdate() {
     AOS.refreshHard()
   }
 
   render() {
-    const ARRAY_FIRST_POSITION = 0
-
     return (
       <div className="row">
         <div className="row courier-new">
@@ -32,11 +34,11 @@ class Projects extends React.Component {
             <h5 className="light">> show projects -n=</h5>
           </div>
           <div className="col s1 m1 l1 left projects-limit-wrapper">
-            <input type="number" className="projects-limit-input" value={this.state.limit} onChange={this.handleChangeLimit}/>
+            <input type="number" className="projects-limit-input" value={this.state.projectsNumber} onChange={this.handleChangeLimit}/>
           </div>
         </div>
         {
-          PROJECTS.slice(ARRAY_FIRST_POSITION, this.state.limit).map((project, index) => {
+          PROJECTS.slice(ARRAY_FIRST_POSITION, this.getLastPosition()).map((project, index) => {
             return (
               <div key={`${project.name}_${index}`} className="row project-row" data-aos="fade-up">
                 {this.renderImage(project)}
@@ -56,6 +58,12 @@ class Projects extends React.Component {
     )
   }
 
+  getLastPosition() {
+    if (this.state.projectsNumber < LIMIT_FLOOR) return LIMIT_FLOOR
+    if (this.state.projectsNumber > LIMIT_CEIL) return LIMIT_CEIL
+    return this.state.projectsNumber
+  }
+
   renderImage(project) {
     return (
       <div className="col s12 l2 m2 center">
@@ -67,7 +75,7 @@ class Projects extends React.Component {
   renderContent(project) {
     return (
       <p className="project-description">
-        <b>{project.name}</b>, <span className="project-date">{project.date}</span> • 
+        <b>{project.name}</b> <span className="project-date">{project.date}</span> • 
         {this.renderProjectLink(project.website, "Website", "fa fa-link")}
         {this.renderProjectLink(project.repository, "Github", "fa fa-github")}
         {this.renderProjectLink(project.paper, "Paper", "fa fa-file-text")}
@@ -108,11 +116,9 @@ class Projects extends React.Component {
 
   handleChangeLimit(event) {
     event.preventDefault()
-    if (event.target.value >= 4) {
-      this.setState({
-        limit: event.target.value
-      })
-    }
+    this.setState({
+      projectsNumber: event.target.value
+    })
   }
 }
 
@@ -124,7 +130,7 @@ const PROJECTS = [
     repository: "https://github.com/peaonunes/customizable-parallel-sets",
     img: cusparallesets,
     date: "2017",
-    skills: ["NodeJS", "Redux", "d3.js"]
+    skills: ["Node.js", "Redux", "d3.js"]
   },
   {
     name: "SwiftCity",
@@ -144,7 +150,7 @@ const PROJECTS = [
     repository: "https://github.com/pet-informatica/CinQuest",
     img: cinquest,
     date: "2015 - 2016",
-    skills: ["Unity", "C#", "HTML", "CSS"]
+    skills: ["Unity", "C#"]
   },
   {
     name: "Recife's Municipal Education Visualization",
@@ -153,7 +159,7 @@ const PROJECTS = [
     repository: "https://github.com/peaonunes/edurec-vis-visualizacao-2016-2",
     img: dadosabertosrecife,
     date: "2016",
-    skills: ["d3.js", "HTML", "CSS", "JavaScript"]
+    skills: ["d3.js", "JavaScript"]
   },
   {
     name: "Color Matches",
@@ -167,7 +173,7 @@ const PROJECTS = [
     name: "NN Breast Cancer Detection",
     description: "Neural Networks final project. Focusing on achieve its best performance applied to a breast cancer detection database.",
     repository: "https://github.com/peaonunes/neural-networks-project",
-    img: "http://peaonunes.github.io/imgs/neural.png",
+    img: neural,
     date: "2016",
     skills: ["Neural Netowrks", "Matlab", "Python"]
   },
@@ -175,7 +181,7 @@ const PROJECTS = [
     name: "Software Inspection (not published)",
     description: "Research of Software Inspection under a Theoretical look, Enterprise usage and Software Quality.",
     paper: "http://bit.ly/InspecaodeSoftware",
-    img: "http://peaonunes.github.io/imgs/costumer.png",
+    img: inspection,
     date: "2016",
     skills: ["Software Quality", "Software Inspection"]
   },
@@ -183,7 +189,7 @@ const PROJECTS = [
     name: "Complaints Mining (not published)",
     description: "A Data Mining Approach for Evaluating the Solution of Costumer Complaints, final Decision and Data Mining Support Systems project.",
     paper: "http://bit.ly/DataManing-CostumersComplaints",
-    img: "http://peaonunes.github.io/imgs/costumer.png",
+    img: datamining,
     date: "2015",
     skills: ["KNIME", "Python", "Data Mining"]
   },
@@ -192,8 +198,12 @@ const PROJECTS = [
     description: "Led project management and developing Client/Server iOS Application, running Lean Startup methodology.",
     img: "https://scontent.frec3-2.fna.fbcdn.net/v/t1.0-1/p200x200/1234371_202650289913726_2141085768_n.png?oh=5ccf850b6b37a54ea3016b201c8abcf8&oe=5A8E3DDD",
     date: "2014-2015",
-    skills: ["Objective-C", "Node"]
+    skills: ["Objective-C", "Node.js"]
   }
 ]
+
+const LIMIT_FLOOR = 4
+const LIMIT_CEIL = PROJECTS.length
+const ARRAY_FIRST_POSITION = 0
 
 export default Projects;

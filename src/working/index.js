@@ -5,7 +5,7 @@ class WorkingExperience extends React.Component {
   render() {
     return (
       <div className="row" data-aos="fade-in">
-        <h5 className="light jobs-section-title">> describe experience</h5>
+        <h5 className="light courier-new">> describe experience</h5>
         {this.renderJobs()}
       </div>
     )

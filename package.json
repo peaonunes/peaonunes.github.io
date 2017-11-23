@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://peaonunes.github.io/",
+  "homepage": "http://peaonunes.github.io/",
   "devDependencies": {
     "react-scripts": "1.0.17"
   },
