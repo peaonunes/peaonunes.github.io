@@ -1,8 +1,14 @@
 import ufpe from './assets/ufpe.jpg'
 import './assets/education.css'
+
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class Education extends React.Component {
+  static contextTypes = {
+    mixpanel: PropTypes.object.isRequired
+  }
+
   render() {
     return (
       <div className="row">
@@ -92,12 +98,22 @@ class Education extends React.Component {
     if (link) {
       return (
         <span className="education-link-wrapper">
-          <a href={link} className="education-icon" target="_blank">
+          <a href={link} className="education-icon" target="_blank" onClick={(e) => this.trackClick(e, link, name)}>
             <i className={`${icon}`} aria-hidden="true"></i> {name}
           </a>
         </span>
       )
     }
+  }
+
+  trackClick(event, link, name) {
+    this.context.mixpanel.track(
+      'education_link_clicked', 
+      {
+        link: link,
+        name: name
+      }
+    )
   }
 
   renderCertificates() {

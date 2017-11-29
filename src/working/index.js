@@ -1,7 +1,13 @@
-import React from 'react'
 import './assets/working.css'
 
+import React from 'react'
+import PropTypes from 'prop-types'
+
 class WorkingExperience extends React.Component {
+  static contextTypes = {
+    mixpanel: PropTypes.object.isRequired
+  }
+
   render() {
     return (
       <div className="row" data-aos="fade-in">
@@ -45,13 +51,23 @@ class WorkingExperience extends React.Component {
     return (
       <div>
         <b>{job.position}</b> @ 
-        <a target="_blank" href={job.href}>
+        <a target="_blank" href={job.href} onClick={(e) => this.trackClick(e, job.href, job.company)}>
           <span className="light job-title"> {job.company}</span>
         </a>
         <p className="job-date">
           {job.date}
         </p>
       </div>
+    )
+  }
+
+  trackClick(event, href, company) {
+    this.context.mixpanel.track(
+      'job_link_clicked', 
+      {
+        link: href,
+        company: company
+      }
     )
   }
 

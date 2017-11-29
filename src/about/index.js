@@ -1,8 +1,14 @@
-import photo from './assets/photo.png';
-import './assets/about.css';
-import React from 'react';
+import photo from './assets/photo.png'
+import './assets/about.css'
+
+import React from 'react'
+import PropTypes from 'prop-types'
 
 class About extends React.Component {
+  static contextTypes = {
+    mixpanel: PropTypes.object.isRequired
+  }
+
   render() {
     return (
       <div className="row">
@@ -54,9 +60,25 @@ class About extends React.Component {
 
   renderContactMethod(contactMethod) {
     return (
-      <a title={contactMethod.title} href={contactMethod.href} className="contact-a" target="_blank" rel="noopener noreferrer">
-        <i className={`${contactMethod.icon} contact-icon`} aria-hidden="true"></i>
+      <a
+        title={contactMethod.title}
+        href={contactMethod.href}
+        className="contact-a"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={(e) => this.trackClick(e, contactMethod.href)}
+      >
+        <i name={contactMethod.href} className={`${contactMethod.icon} contact-icon`} aria-hidden="true"></i>
       </a>
+    )
+  }
+
+  trackClick(event, href) {
+    this.context.mixpanel.track(
+      'contact_link_clicked', 
+      {
+        link: href,
+      }
     )
   }
 }
@@ -84,4 +106,4 @@ const CONTACTS = [
   }
 ]
 
-export default About;
+export default About

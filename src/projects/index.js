@@ -10,8 +10,13 @@ import neural from './assets/neural.png'
 import './assets/projects.css'
 import React from 'react'
 import AOS from 'aos'
+import PropTypes from 'prop-types'
 
 class Projects extends React.Component {
+  static contextTypes = {
+    mixpanel: PropTypes.object.isRequired
+  }
+
   constructor(props){
     super(props)
 
@@ -90,12 +95,22 @@ class Projects extends React.Component {
     if (link) {
       return (
         <span className="project-link-wrapper">
-          <a href={link} className="project-icon" target="_blank">
+          <a href={link} className="project-icon" target="_blank" onClick={(e) => this.trackClick(e, link, name)}>
             <i className={`${icon}`} aria-hidden="true"></i> {name}
           </a>
         </span>
       )
     }
+  }
+
+  trackClick(event, link, name) {
+    this.context.mixpanel.track(
+      'project_link_clicked', 
+      {
+        link: link,
+        name: name
+      }
+    )
   }
 
   renderSkills(project) {
