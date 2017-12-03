@@ -1,5 +1,5 @@
-import cusparallesets from './assets/customizable-prallel-sets.gif'
 import dadosabertosrecife from './assets/dadosabertosrecife.png'
+import cusparallesets from './assets/parallel-sets.png'
 import colormatches from './assets/colormatches.gif'
 import inspection from './assets/inspection.jpg'
 import datamining from './assets/datamining.jpg'

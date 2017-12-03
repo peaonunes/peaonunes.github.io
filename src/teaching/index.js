@@ -1,58 +1,16 @@
 import ufpe from './assets/ufpe.jpg'
 import './assets/teaching.css'
+
 import React from 'react'
 
 class Teaching extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      finishedImporting: false,
-      loadingBar: "[===>]",
-      counter: 0
-    }
-
-    this.tick = this.tick.bind(this)
-  }
-
   render() {
     return (
-      <div className="row" onTouchStart={() => this.startImporting()} onMouseEnter={() => this.startImporting()}>
+      <div className="row">
         <h5 className="light courier-new">> import teaching</h5>
-        {
-          this.state.finishedImporting
-          ? this.renderTeaching()
-          : this.renderImporting()
-        }
+        {this.renderTeaching()}
       </div>
     )
-  }
-
-  startImporting() {
-    if (this.timer == null) {
-      this.timer = setInterval(() => this.tick(), 10)
-    }
-  }
-
-  renderImporting() {
-    return (
-      <div className="courier-new">
-        <span>$ downloading {this.state.counter}/1000 packages...</span><br/>
-        {this.state.loadingBar}
-      </div>
-    )
-  }
-
-  tick() {
-    if (this.state.counter === 1000) {
-      this.setState({ finishedImporting: true })
-      clearInterval(this.timer)
-    } else {
-      this.setState({
-        counter: this.state.counter + 10,
-        loadingBar: this.state.loadingBar.slice(0, 3) + "=" + this.state.loadingBar.slice(3)
-      })
-    }
   }
 
   renderTeaching() {
