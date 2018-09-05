@@ -1,13 +1,13 @@
-import photo from './assets/photo.png'
-import './assets/about.css'
+import photo from "./assets/photo.jpeg";
+import "./assets/about.css";
 
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 class About extends React.Component {
   static contextTypes = {
     mixpanel: PropTypes.object.isRequired
-  }
+  };
 
   render() {
     return (
@@ -25,37 +25,36 @@ class About extends React.Component {
         <div className="col s12 m10 l10">
           <h4 className="light">Hi there, I'm Rafael Nunes.</h4>
           <p>
-            Looking forward to build and to work on projects that makes the difference!
-            <br/>
-            I love innovating and playing around with webapps, data science, visualization, software engeneering...
-            <br/>
+            Looking forward to build and to work on projects that generates
+            impact!
+            <br />I love innovation and working on webapps, data science &
+            visualization, software engeneering...
+            <br />
             And sometimes I even take risk on writing.
           </p>
           {this.renderContacts()}
         </div>
       </div>
-    )
+    );
   }
 
   renderContacts() {
     return (
       <div className="row">
-        {
-          CONTACTS.map((contactMethod, index) => {
-            return (
-              <div key={`${contactMethod.title}_${index}`}>
-                <div className="col m1 l1 hide-on-small-only show-on-medium-and-up">
-                  {this.renderContactMethod(contactMethod)}
-                </div>
-                <div className="col s3 hide-on-med-and-up">
-                  {this.renderContactMethod(contactMethod)}
-                </div>
+        {CONTACTS.map((contactMethod, index) => {
+          return (
+            <div key={`${contactMethod.title}_${index}`}>
+              <div className="col m1 l1 hide-on-small-only show-on-medium-and-up">
+                {this.renderContactMethod(contactMethod)}
               </div>
-            )
-          })
-        }
+              <div className="col s3 hide-on-med-and-up">
+                {this.renderContactMethod(contactMethod)}
+              </div>
+            </div>
+          );
+        })}
       </div>
-    )
+    );
   }
 
   renderContactMethod(contactMethod) {
@@ -66,20 +65,21 @@ class About extends React.Component {
         className="contact-a"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={(e) => this.trackClick(e, contactMethod.href)}
+        onClick={e => this.trackClick(e, contactMethod.href)}
       >
-        <i name={contactMethod.href} className={`${contactMethod.icon} contact-icon`} aria-hidden="true"></i>
+        <i
+          name={contactMethod.href}
+          className={`${contactMethod.icon} contact-icon`}
+          aria-hidden="true"
+        />
       </a>
-    )
+    );
   }
 
   trackClick(event, href) {
-    this.context.mixpanel.track(
-      'contact_link_clicked', 
-      {
-        link: href,
-      }
-    )
+    this.context.mixpanel.track("contact_link_clicked", {
+      link: href
+    });
   }
 }
 
@@ -104,6 +104,6 @@ const CONTACTS = [
     href: "mailto:rafaelngds@gmail.com",
     icon: "fa fa-envelope"
   }
-]
+];
 
-export default About
+export default About;
