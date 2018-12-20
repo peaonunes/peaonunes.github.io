@@ -11,3 +11,11 @@
 .contact-a:hover {
   color: red;
 }
+
+.about-text {
+  margin-bottom: 12px;
+}
+
+h4.about-header {
+  margin-top: 36px;
+}

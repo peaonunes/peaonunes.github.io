@@ -23,14 +23,9 @@ class About extends React.Component {
           />
         </div>
         <div className="col s12 m10 l10">
-          <h4 className="light">Hi there, I'm Rafael Nunes.</h4>
-          <p>
-            Looking forward to build and to work on projects that generates
-            impact!
-            <br />I love innovation and working on webapps, data science &
-            visualization, software engeneering...
-            <br />
-            And sometimes I even take risk on writing.
+          <h4 className="light about-header">Hi there, I'm Rafael Nunes.</h4>
+          <p className="about-text">
+            Looking forward to collaborate with projects that generates impact!
           </p>
           {this.renderContacts()}
         </div>

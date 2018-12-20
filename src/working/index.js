@@ -1,7 +1,9 @@
-import "./assets/working.css";
-
 import React from "react";
 import PropTypes from "prop-types";
+
+import inloco from "./assets/inloco.png";
+import suati from "./assets/suati.png";
+import "./assets/working.css";
 
 class WorkingExperience extends React.Component {
   static contextTypes = {
@@ -86,26 +88,24 @@ class WorkingExperience extends React.Component {
 const JOBS = [
   {
     company: "In Loco",
-    href: "https://www.inlocomedia.com/",
-    img:
-      "https://media.licdn.com/dms/image/C4D0BAQG5mtNrU_4i_g/company-logo_200_200/0?e=1544054400&v=beta&t=UcJt01JxWB5KUPtYZl335ikDH-Mve8oASSFt4VMiONg",
+    href: "https://www.inloco.com.br",
+    img: inloco,
     position: "Software Engineer",
     date: "Mar, 2017 - Today",
     skills: [
       "Java",
-      "React/Redux",
-      "Ruby",
-      "Kafka",
-      "Kubernetes",
+      "React",
       "GraphQL",
-      "GRPC"
+      "Ruby on Rails",
+      "Kubernetes",
+      "Kafka",
+      "gRPC"
     ]
   },
   {
     company: "Suati",
     href: "http://suati.com.br/",
-    img:
-      "https://media.licdn.com/dms/image/C560BAQE2dSRxRwjGNA/company-logo_400_400/0?e=1544054400&v=beta&t=VIpw3QkLT2DgA0uHeH9MjFAgx4G6U__7Q2tgm0LkiFM",
+    img: suati,
     position: "Software Engineer Intern",
     date: "Apr, 2015 - Jan, 2016",
     skills: ["C#", "TFS", "Powershell"]
