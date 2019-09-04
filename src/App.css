@@ -1,19 +1,25 @@
-header, main, footer {
+header,
+main,
+footer {
   padding-left: 300px;
 }
 
 body {
-  font-size: 13px;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
 
-@media only screen and (max-width : 992px) {
-  header, main, footer {
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
     padding-left: 0;
   }
 }
 
 .courier-new {
-  font-family: "Courier New";
+  font-family: 'Courier New';
 }
 
 a:hover {
