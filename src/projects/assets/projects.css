@@ -16,11 +16,6 @@
   border: 0px !important;
 }
 
-.project-img {
-  width: 100px;
-  height: 100px;
-}
-
 .project-title {
   font-weight: bold;
 }
@@ -36,15 +31,6 @@
 
 .project-content {
   padding: 5px !important;
-}
-
-.project-icon {
-  font-size: 15px;
-}
-
-.project-link-wrapper {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .project-date {
