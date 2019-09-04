@@ -1,7 +1,5 @@
-
-.education-img {
-  width: 85px;
-  height: 85px;
+.section-title {
+  margin-right: 6px;
 }
 
 .education-row {
@@ -15,16 +13,6 @@
 .education-date {
   font-size: 12px;
   opacity: 0.9;
-}
-
-.education-icon {
-  font-size: 15px;
-  opacity: 0.8;
-}
-
-.education-link-wrapper {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .universities-margin {
