@@ -4,7 +4,11 @@ import React from 'react'
 const Content = ({ onClick, position, href, company, period }) => (
   <div>
     <b>{position}</b> @
-    <a target="_blank" href={href} onClick={e => onClick(e, href, company)}>
+    <a
+      target="_blank"
+      href={href}
+      onClick={e => onClick(e, href, company)}
+      rel="noopener noreferrer">
       <span className="light job-title"> {company}</span>
     </a>
     <p className="job-period">{period}</p>

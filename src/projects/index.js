@@ -45,8 +45,8 @@ const PROJECTS = [
       'Visualizating Swift Systems as 3D cities. Graduation project under the tutorship of Prof. Fernando Castor.',
     website: 'https://swiftcity.github.io/',
     repository: 'https://github.com/swiftcity',
-    paper: 'http://peaonunes.github.io/files/ABSTRACT-PAPER.pdf',
-    poster: 'http://peaonunes.github.io/files/POSTER-SWIFTCITY.pdf',
+    paper: 'http://bit.ly/swiftcity-abstract-paper',
+    poster: 'http://bit.ly/swiftcity-poster',
     img: swiftcity,
     date: '2016',
     skills: ['Three.js', 'd3.js', 'HTML', 'CSS']
@@ -145,13 +145,15 @@ class Projects extends React.Component {
             <h5 className="light">> show projects -n=</h5>
           </div>
           <div className="col s1 m1 l1 left projects-limit-wrapper">
-            <input
-              type="number"
-              className="projects-limit-input"
-              min={LIMIT_FLOOR}
-              value={this.state.projectsNumber}
-              onChange={this.handleChangeLimit}
-            />
+            <label>
+              <input
+                type="number"
+                className="projects-limit-input"
+                min={LIMIT_FLOOR}
+                value={this.state.projectsNumber}
+                onChange={this.handleChangeLimit}
+              />
+            </label>
           </div>
         </div>
         {PROJECTS.slice(ARRAY_FIRST_POSITION, this.getLastPosition()).map(

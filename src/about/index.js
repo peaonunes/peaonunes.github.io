@@ -13,15 +13,15 @@ class About extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="col s12 m2 l2 center">
+        <div className="col s12 m2 l2 no-padding">
           <img
             src={photo}
-            className="circle personal-img pointer-cursor tooltipped"
-            alt="future-easter-egg"
+            className="circle personal-img pointer-cursor tooltipped no-padding"
+            alt="This is a placeholder."
             title="I am going to rewrite this with Gatsby someday!"
           />
         </div>
-        <div className="col s12 m10 l10">
+        <div className="col s12 m10 l10 no-padding">
           <h4 className="light about-header">Hi there, I'm Rafael Nunes.</h4>
           <p className="about-text">
             Looking forward to collaborate with projects that generates impact!
